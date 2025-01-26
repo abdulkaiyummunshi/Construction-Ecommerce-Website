@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <!-- SLICK SLIDER -->
+    <link rel="stylesheet" href="./asstes/css/slick.min.css">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="./asstes/css/font-awesome-all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP 5.3 -->
+    <link rel="stylesheet" href="./asstes/css/bootstrap.min.css">
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="./asstes/css/style.css">
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="./asstes/css/responsive.css">
+    <!-- FONTS STYLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .nav_section{
+            background-image: url(./asstes/images/about_page/nav/bg.png);
+            height: 510px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .nav_section .overly_section{
+            background-color: #0e121dd5;
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+        #navigation{
+            background-color: transparent !important;
+        }
+        #navigation .logo{
+            background-color: transparent !important;
+        }
+        #navigation .logo .logo_text p{
+            color: #ff5e14;
+        }
+        #navigation .nav_iteam li a{
+            color: white !important;
+        }
+        #navigation .nav_iteam li:hover a{
+            color: #ff5e14 !important;
+        }
+        #navigation .nav_icon li a{
+            color: white !important;
+        }
+        #navigation .nav_icon li:hover a{
+            color: #ff5e14 !important;
+        }
+        #navigation .menu_btn{
+            color: white !important;
+        }
+        .banner_section{
+            height: 380px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .banner_section h4{
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size  : 48px;
+            line-height: 121%;
+            color      : var(--white);
+        }
+        .banner_section .child_name{
+            display: flex;
+            gap: 10px;
+        }
+        .banner_section .child_name a{
+            font-family   : var(--second-family);
+            font-weight   : 600;
+            font-size     : 16px;
+            line-height   : 162%;
+            text-transform: uppercase;
+            color         : var(--white);
+        }
+        .banner_section .child_name a:hover{
+            color: #ff5e14;
+            transition: 0.3s ease;
+        }
+        .banner_section .child_name span{
+            color: white;
+        }
+        .nav_section .overly_section .left_right_img img:nth-child(1){
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+        .nav_section .overly_section .left_right_img img:nth-child(2){
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+<!-- ==================================<<<<<<<<<<NAVIGATION BAR START>>>>>>>>>>================================= -->
+<div class="nav_section">
+    <div class="overly_section">
+        <nav id="navigation">
+        <div class="logo">
+             <div class="logo_contains">
+                   <a href="index.html"><img src="asstes/images/about_page/nav/logo.png" alt="This is Logo"></a>
+            <div class="logo_text">
+                <a href="index.html">
+                    <h4>BuildWoll</h4>
+                <p>Construction</p>
+                </a>
+            </div>
+             </div>
+            </div>
+        <div class="container">
+            
+            
+               <ul class="nav_iteam">
+                <li><a href="home.html">Home + </a></li>
+                <li><a href="service.html">Services + </a>
+                    <ul class="dropdown"> 
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="services_details.html">Service Details</a></li>
+                        <li><a href="#">Comming Soon</a></li>
+                   </ul>
+                </li>
+                <li><a href="#">Portfolio + </a></li>
+
+                <li><a href="#">Pages + </a>
+                     <ul class="dropdown"> 
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="services_details.html"> Service Details</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blog_details.html">Blog Details</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="project_details.html">Project Details</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                   </ul>
+                </li>
+
+                <li><a href="#">News + </a></li>
+                <li><a href="contact.html">Contact + </a></li>
+            </ul>
+
+            
+        </div>
+        <ul class="nav_icon">
+                <li class="search"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li class="cart"><a href="#"><i class="fa-solid fa-cart-plus"></i> <span class="count_number">0</span></a></li>
+                <li class="nav_btn"><a href="#">Get a quote<span> <i class="fa-solid fa-right-long"></i> </span></a></li>
+            </ul>
+
+            <div class="mobile_device">
+                <span class="menu_btn"><i class="fa-solid fa-bars"></i></span>
+                </div>
+        </nav>
+<!-- ========OFFCANVAS START============ -->
+        <div class="off_canvas">
+            <span class="cross_btn"><i class="fa-solid fa-x"></i></span>
+            <ul class="menu_iteam">
+                <li><a href="#">Home +</li>
+                    <li><a href="#">Services +</li>
+                        <li><a href="#">Portfolio +</li>
+                            <li><a href="#">projects +</li>
+                                <li><a href="#">News +</li>
+                        <li><a href="#">Contact +</li>
+                    </ul>
+                    
+                    <ul class="menu_icon">
+                        <li class="menu_search"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li class="menu_cart"><a href="#"><i class="fa-solid fa-cart-plus"></i> <span class="menu_count_number">0</span></a></li>
+                        <li class="menu_nav_btn"><a href="#">Get a quote<span> <i class="fa-solid fa-right-long"></i> </span></a></li>
+                    </ul>
+        </div>
+<!-- ========OFFCANVAS END============ -->
+<!-- ================SEARCH START=================== -->
+        <div id="search_bar">
+            <input type="text" placeholder="Search"><span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="search_cross"><i class="fa-solid fa-x"></i></span>
+        </div>
+<!-- ================SEARCH END=================== -->
+        <div class="container ">
+            <div class="banner_section">
+                <h4>Project Details </h4>
+            <div class="child_name">
+                <a href="index.html">Home</a>
+                <span><i class="fa-solid fa-angles-right"></i></span>
+                <a href="blog.html">Project Details</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="left_right_img">
+            <img src="./asstes/images/about_page/nav/one.png" alt="">
+            <img src="./asstes/images/about_page/nav/tow.png" alt="">
+        </div>
+    </div>
+</div>
+<!-- ===================================<<<<<<<<<<NAVIGATION BAR END>>>>>>>>>>================================== -->
+    
+    
+<!-- ===================================<<<<<<<<<<PROJECT IMFORMATION START>>>>>>>>>>================================== -->
+<section id="project_imformation">
+    <div class="container">
+       <div class="left_right">
+         <div class="left_part col-lg-8">
+            <div class="image">
+                <img src="./asstes/images/project_details_page/project_impormation/1.png" alt="">
+            </div>
+        </div>
+        <div class="right_part col-lg-4">
+            <div class="imformation">
+                <h4>Project Information</h4>
+                <p>Some construction and real estate companies also offer property management services management</p>
+                <ul>
+                    <li>
+                        <p>Client :</p>
+                        <p>Esther Howard</p>
+                    </li>
+                    <li>
+                        <p>Category</p>
+                        <p>Construction</p>
+                    </li>
+                    <li>
+                        <p>Location :</p>
+                        <p>New York, USA</p>
+                    </li>
+                    <li>
+                        <p>Date :</p>
+                        <p>20th July, 2024</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+       </div>
+    </div>
+</section>
+<!-- ===================================<<<<<<<<<<PROJECT IMFORMATION END>>>>>>>>>>================================== -->
+    
+<!-- ===================================<<<<<<<<<<HOW TO BUILD START>>>>>>>>>>================================== -->
+<section id="how_to_build">
+    <div class="container">
+        <div class="contains">
+            <h4>How We Build <span>Multistoried</span></h4>
+            <p>Construction and real estate companies must comply with various regulations and building codes at the local, state, and federal levels. This involves ensuring that projects meet safety standards, environmental regulations, zoning laws, and other legal requirements. With increasing awareness of environmental issues, many construction and real estate companies are incorporating sustainable practices and green building techniques into their projects.</p>
+            <p>This includes energy-efficient design, use of renewable materials, and reducing carbon footprint Some construction and real estate companies also offer property management services, which involve maintaining  and overseeing properties on behalf of owners </p>
+        </div>
+    </div>
+</section>
+<!-- ===================================<<<<<<<<<<HOW TO BUILD END>>>>>>>>>>================================== -->
+
+<!-- ==================================<<<<<<<<<<BUILDING FUTURES START>>>>>>>>>>================================= -->
+<section id="building_futures">
+    <div class="container">
+        <div class="row">
+            <div class="one col-lg-6">
+                <div class="image">
+                    <img src="./asstes/images/project_details_page/building_futures/1.png" alt="">
+                </div>
+            </div>
+            <div class="tow col-lg-5">
+                <h4>Building Futures One  at a Time</h4>
+                <p>This includes all activities related to the actual construction of buildings and infrastructure, such as planning, design, engineering, procurement of materials, construction</p>
+                <ul>
+                    <li><span><i class="fa-regular fa-circle-check"></i></span>100% Satisfaction Guarantee.</li>
+                    <li><span><i class="fa-regular fa-circle-check"></i></span>Accurate Testing Processes.</li>
+                    <li><span><i class="fa-regular fa-circle-check"></i></span>35+ Years Of Experience.</li>
+                    <li><span><i class="fa-regular fa-circle-check"></i></span>Eco-Friendly Build Materials.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ===================================<<<<<<<<<<BUILDING FUTURES END>>>>>>>>>>================================== -->
+
+<!-- ==================================<<<<<<<<<<TURNING SPACES START>>>>>>>>>>================================= -->
+<section id="building_futures">
+    <div class="container">
+        <div class="row">
+            <div class="tow col-lg-6">
+                <h4>Turning Spaces Places to Call Home</h4>
+                <p>This includes all activities related to the actual construction of buildings and infrastructure, such as planning, design, engineering, procurement of materials, construction</p>
+                <ul>
+                    <li><span><i class="fa-regular fa-circle-check"></i></span>100% Satisfaction Guarantee.</li>
+                    <li><span><i class="fa-regular fa-circle-check"></i></span>Accurate Testing Processes.</li>
+                    <li><span><i class="fa-regular fa-circle-check"></i></span>35+ Years Of Experience.</li>
+                    <li><span><i class="fa-regular fa-circle-check"></i></span>Eco-Friendly Build Materials.</li>
+                </ul>
+            </div>
+            <div class="one col-lg-5">
+                <div class="image">
+                    <img src="./asstes/images/project_details_page/turning_spaces/1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ===================================<<<<<<<<<<TURNING SPACES END>>>>>>>>>>================================== -->
+
+<!-- ==================================<<<<<<<<<<PROJECT SUMMERY START>>>>>>>>>>================================= -->
+<section id="project_summery">
+    <div class="container">
+        <h4>Project Summary</h4>
+        <p> Many construction companies also engage in property development, which involves acquiring land, obtaining necessary approvals and permits, designing and works constructing residential or commercial properties, and marketing and selling or renting them out This involves activities related to buying, selling, leasing, and any managing real estate properties. Real estate services may also include property valuation.</p>
+    </div>
+</section>
+<!-- ===================================<<<<<<<<<<PROJECT SUMMERY END>>>>>>>>>>================================== -->
+
+
+    <div class="container home_industry">
+
+            <img src="asstes/images/banner/industry/1.png" alt="">
+            <img src="asstes/images/banner/industry/1.png" alt="">
+            <img src="asstes/images/banner/industry/1.png" alt="">
+            <img src="asstes/images/banner/industry/1.png" alt="">
+            <img src="asstes/images/banner/industry/1.png" alt="">
+            <img src="asstes/images/banner/industry/1.png" alt="">
+    </div>
+<!-- ==================================<<<<<<<<<<FOOTER SECTION START>>>>>>>>>>================================= -->
+    <footer id="footer_section">
+        <div class="container">
+            <div class="one">
+                <h4>Sign Up For News & Get All Update</h4>
+                <div class="inpu_btn">
+                    <input type="text" placeholder="Enter Your E-mail"><span><a href="#"> Sign up</a></span>
+                </div>
+            </div>
+
+            <div class="tow row">
+                <div class="col-lg-3 icons">
+                    <ul>
+                        <li class="d-flex">
+                            <a href="index.html">
+                                <img src="./asstes/images/footer/logo.png" alt=""> 
+                            </a>
+                            <a href="index.html"><span>
+                                <p>BuildWoll</p>
+                                <p>Construction  </p>
+                            </span></a>
+                        </li>
+
+                        <li>
+                            <p>Real estate development involves acquiring, planning, designing, rates constructing, and managing</p>
+
+                        </li>
+                        <li>
+                            <ul class="social_media_icon">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 our_services">
+                    <ul>
+                        <li></span><h4>Our Services</h4></li>
+                        <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Property Pulse</a href="#"></li>
+                        <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Renovation Rescue</a href="#"></li>
+                        <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Property Maintenance</a href="#"></li>
+                        <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Security Services</a href="#"></li>
+                        <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Relocation assistance</a href="#"></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 our_services">
+                    <ul>
+                        <li></span><h4>Useful Links</h4></li>
+                        <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Home</a href="#"></li>
+                        <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Pages </a href="#"></li>
+                        <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Services </a href="#"></li>
+                        <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Portfolio </a href="#"></li>
+                        <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Contact us </a href="#"></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 our_services recent">
+                    <ul>
+                        <li></span><h4>Recent Post</h4></li>
+                        <li>
+                            <div class="col-lg-4">
+                                <img src="./asstes/images/footer/1.png" alt="">
+                            </div>
+                            <div class="col-lg-8 date_text">
+                                <p  class="date"><span><i class="fa-solid fa-calendar-days"></i></span> 20 April, 2023</p>
+                            <p class="where">Where Dreams Find a Home</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="col-lg-4">
+                                <img src="./asstes/images/footer/2.png" alt="">
+                            </div>
+                            <div class="col-lg-8 date_text">
+                                <p  class="date"><span><i class="fa-solid fa-calendar-days"></i></span> 20 April, 2023</p>
+                            <p class="where">Elevating Real Estate Experiences</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy_right">
+            <p>© 2024 All Rights Reserved By BuildWoll</p>
+        </div>
+    </footer>
+
+<!-- ===================================<<<<<<<<<<FOOTER SECTION END>>>>>>>>>>================================== -->  
+
+    <!-- JQUERY -->
+    <script src="./asstes/js/jquery-3.7.1.min.js"></script>
+    <!-- SLICK SLIDER -->
+    <script src="./asstes/js/slick.min.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="./asstes/js/bootstrap.bundle.min.js"></script>
+    <!-- CUSTOM JS -->
+    <script src="./asstes/js/app.js"></script>       
+</body>
+</html>

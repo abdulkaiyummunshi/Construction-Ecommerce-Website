@@ -1,0 +1,1141 @@
+/* Responsive Design */
+@media screen and (max-width: 1100px) {
+    #navigation .container .nav_iteam{
+        display: none;
+    }
+    #navigation .nav_icon {
+        display: none;
+    }
+    #navigation .logo {
+    width          : 30%;
+    justify-content: center;
+}
+    #navigation .mobile_device{
+        display: block;
+    }
+}
+
+/* ==========================MOBILE DEVICE (480px - 767px)=============================== */
+
+@media (max-width: 767px) {
+    
+    #navigation{
+        height: 70px;
+    }
+    #navigation .logo {
+    width          : 50%;
+    justify-content: center;
+    margin-left: 10px;
+}
+#navigation .logo .logo_text{
+    margin-top: -5px;
+}
+#navigation .logo .logo_text h4{
+    font-size: 20px !important;
+}
+#navigation .logo .logo_text p{
+    margin-top: -5px;
+}
+
+.side_bar{
+    display: none;
+}
+#banner .contains .text_contains h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+#banner .contains .right_contains {
+    align-items: center;
+    justify-content: center;
+}
+#banner .contains .right_contains .people_pic {
+    /* background-color: red; */
+    width: 100%;
+    margin-left: 50%;
+    margin-top: 20px;
+}
+
+
+/* ------ABOUT US START ------- */
+#about_us {
+    /* margin-top: -400px; */
+}
+#about_us .ab_one .about_image {
+    position           : relative;
+    margin-bottom: 20px;
+    /* display: none; */
+
+}
+
+#about_us .ab_one .about_image img:nth-child(1) {
+    position: absolute;
+    top     : 150px;
+    left    : 0px;
+    width   : 200px;
+    height  : 230px;
+}
+
+#about_us .ab_one .about_image img:nth-child(2) {
+    position: absolute;
+    top     : 140px;
+    left    : -30px;
+    width   : 260px;
+    height  : 260px;
+    display: none;
+}
+
+#about_us .ab_one .about_image img:nth-child(3) {
+    position: absolute;
+    top     : 160px;
+    left    : 190px;
+    width   : 220px;
+    height  : 220px;
+}
+
+#about_us .ab_one .about_image img:nth-child(4) {
+    position: absolute;
+    top     : 129px;
+    left    : 317px;
+    display: none;
+}
+
+#about_us .ab_one .about_image img:nth-child(5) {
+    position: absolute;
+    top     : 290px;
+    left    : 81px;
+    width   : 220px;
+    height  : 220px;
+}
+
+#about_us .ab_one .about_image img:nth-child(6) {
+    position: absolute;
+    top     : 455px;
+    left    : 54px;
+    width: 250px;
+    height: 250px;
+    display: none;
+}
+
+
+
+
+
+
+#about_us .ab_tow .about_name {
+    padding: 10px;
+}
+
+#about_us .ab_tow h2 {
+    font-size: 30px;
+    padding: 10px;
+}
+#about_us .ab_tow p{
+    padding: 10px 20px;
+    text-size-adjust:auto ;
+}
+#about_us .ab_tow .rantal_interior {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+#about_us .ab_tow .rantal_interior .rantal {
+    width: 80%;
+}
+
+#about_us .ab_tow .rantal_interior .interior {
+    width: 80%;
+    margin-top: 20px;
+}
+#about_us .ab_tow .tick {
+    width: 100%;
+    margin-left: 10px;
+}
+#about_us .ab_tow .tick p{
+    padding: 0px;
+}
+#about_us .ab_tow .tick p:nth-child(2){
+    margin-top: -10px;
+}
+#about_us .ab_tow .phn {
+    width: 60%;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#about_us .ab_tow .phn .phn_icon {
+    padding: 5px;
+}
+#about_us .ab_tow .phn .phn_number p:nth-child(1) {
+    margin:-10px;
+}
+#about_us .ab_tow .phn .phn_number p:nth-child(2) {
+    margin-left: -10px;
+}
+#about_us .ab_tow .read_more_btn {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+#about_us .ab_tow .read_more_btn span {
+   padding: 15px 15px;
+   text-align: center;
+}
+/* ------ABOUT US END ------- */
+
+/* ------SERVICE START------- */
+#service {
+    height: 1700px;
+    margin-top: 800px;
+}
+#service .srv_one p{
+    font-size: 14px;
+}
+#service .srv_one h4 {
+    font-size: 1px;
+    background-color: red;
+}
+#service .srv_tow {
+    margin-top: -40px;
+}
+#service .srv_tow .cctd {
+    width: 100%;
+}
+#service .srv_three {
+    margin-top: 500px;
+}
+#service .srv_three .rectangle .first_img {
+    width              : 268px;
+    height             : 248px;
+}
+
+#service .srv_three .rectangle img {
+    top     : 20px;
+    width: 200px;
+    height: 200px;
+    right: -60%;
+}
+#service .srv_three .srv_right_contains {
+    margin-top: 400px;
+}
+#service .srv_three .srv_right_contains h4{
+    font-size: 22px;
+    width: 330px;
+}
+#service .srv_three .srv_right_contains p {
+    /* width: 90%; */
+    width                : 100%;
+    padding              : 10px;
+    height               : 200px;
+    font-size            : 14px;
+    margin: 20px 0px;  
+
+}
+/* ------SERVICE END------- */
+
+/* -------GREAT TEAM START------- */
+
+#great_team{
+    margin-top: -100px;
+}
+#great_team .great_name{
+    /* background-color: red; */
+}
+#great_team .meet{
+    /* background-color: red; */
+    width: 350px;
+    font-size: 25px;
+}
+#great_team .parent .left-arrow{
+    display: none;
+    visibility: hidden;
+    background-color: red;
+
+}
+#great_team .parent .right-arrow{
+    display: none;
+    visibility: hidden;
+}
+/* -------GREAT TEAM END------- */
+
+/* ------Book appoitnment START */
+#book_appoitnment{
+    height: 1500px;
+    margin-top: 200px;
+}
+#book_appoitnment .first_row .tow {
+    height: 480px;
+    margin-top: 10px;
+
+ }
+ #book_appoitnment .first_row .one{
+    height: 480px;
+    margin-top: -50px;
+ }
+ #book_appoitnment .second_row {
+    margin-top: 500px;
+ }
+ #book_appoitnment .second_row h4 {
+    font-size: 32px;
+    width: 80%;
+ }
+/* ------Book appoitnment END */
+
+/* --------PORTFOLIO START-------- */
+#portfolio .one h4{
+    font-size: 30px;
+    margin-top: 10px;
+}
+#portfolio{
+    height: 1630px;
+}
+#second_portfolio .one_part .port_title h4{
+    font-size: 30px;
+}
+#portfolio .tow .card_one {
+    margin-top: 30px;
+}
+/* --------PORTFOLIO END---------- */
+
+#second_portfolio .third_part .one {
+    width           : 100%;
+}
+
+#second_portfolio .third_part .tow {
+    width           : 100%;
+
+}
+
+#second_portfolio .third_part .three {
+    width           : 100%;
+}
+
+#second_portfolio .third_part .four {
+    width           : 100%;
+    margin-top: 20px;
+}
+
+#second_portfolio .third_part .five {
+    width           : 100%;
+}
+
+#second_portfolio .third_part .six {
+    width           : 100%;
+}
+
+
+/* -----WHY CHOOSE US START------ */
+#why_choose_us{
+    margin-top: 1800px;
+    /* height: 1900px; */
+}
+#why_choose_us .row .first_colmun {
+    margin-top: 200px;
+}
+#why_choose_us .row .first_colmun h4 {
+    font-size: 30px;
+}
+#why_choose_us .row .first_colmun .choose_box{
+    margin-top: 50px;
+}
+#why_choose_us .row .first_colmun .choose_box .box{
+    width: 100%;
+    /* margin-top: 100px; */
+    /* justify-content: center; */
+}
+#why_choose_us .row .second_column{
+    margin-top: 150px;
+}
+#why_choose_us .row .second_column .one {
+    width: 100%;
+    /* background-color: red */
+}
+#why_choose_us .row .second_column .one .title {
+    width: 100%;
+    font-size: 14px;
+}
+/* -----WHY CHOOSE US END------ */
+
+#how_to_work .one h4 {
+    font-size: 30px;
+}
+#how_to_work .tow .child {
+    margin: 20px 0px;
+}
+
+
+/* -------BLOG & NEWS SECTION START--------- */
+#blog_news .one h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+/* -------BLOG & NEWS SECTION END--------- */
+
+/* -------FOOTER SECTION START--------- */
+#footer_section .tow .our_services li:nth-child(1){
+    margin-top: 30px;
+}
+#footer_section .one .inpu_btn{
+    flex-direction: column;
+}
+#footer_section .one .inpu_btn input{
+    width: 350px;
+}
+#footer_section .one .inpu_btn span{
+    width: 350px;
+}
+#footer_section .tow .recent li{
+    margin-top: 10px;
+}
+/* -------FOOTER SECTION END--------- */
+
+
+
+
+/* =======================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HOME PAGE START <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<======================= */
+/* ====================NAVIGATION BAR STAR====================== */
+.home_navigation .home_logo img{
+    width: 50px!important;
+    height: auto;
+}
+.home_navigation .logo_text h4{
+    font-size: 18px !important;
+}
+.home_navigation .logo_text p{
+    font-size: 14px!important;
+}
+/* ====================NAVIGATION BAR END====================== */
+
+
+/* ====================BANNER SECTION START==================== */
+#home_banner .home_side_bar{
+    display: none;
+}
+#home_banner .home_banner_image{
+    margin: 0px;
+}
+#home_banner .home_banner_image h2{
+    font-size: 30px;
+    width: 90%;
+
+}
+#home_banner .banner_bottom .bottom_bar {
+    display: none;
+}
+#home_banner .banner_bottom p {
+    font-size: 20px;
+}
+/* ====================BANNER SECTION END==================== */
+
+/* ====================ABOUT SECTION START==================== */
+#home_about .row .part_one{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home_about .row .part_tow {
+    margin-top: 50px;
+}
+#home_about .row .part_tow h4 {
+    margin: 20px 0px;
+}
+#home_about .row .part_tow p{
+    margin-bottom: 20px;
+    text-align: center;
+    /* width: 90%; */
+}
+#home_about .row .part_tow .btn_profile .profile .name_category {
+    margin-bottom: 30px;
+}
+#home_about .row .part_tow .btn_profile .profile .name_category p:nth-child(2) {
+    margin-top: -20px;
+}
+/* ====================ABOUT SECTION END==================== */
+
+
+/* ====================SERVICES SECTION START==================== */
+
+/* ====================SERVICES SECTION END==================== */
+
+/* ====================COMPANY ARCHIVES START====================== */
+
+#company_archives .part_tow {
+    margin-top: 30px;
+}
+/* ====================COMPANY ARCHIVES END====================== */
+h4{
+    font-size: 30px!important;
+}
+
+/* -----book an appointment start------- */
+#home_book_appointment .book_app {
+    justify-content: center;
+}
+#home_book_appointment .left_side input{
+    width: 350px;
+}
+#home_book_appointment .left_side select{
+    width: 350px;
+}
+#home_book_appointment .left_side textarea{
+    width: 350px;
+}
+#home_book_appointment .left_side a{
+    width: 350px;
+}
+#home_book_appointment .right_side{
+    margin-top: 40px;
+    overflow: hidden;
+}
+/* -----book an appointment end------- */
+
+/* --------Company archives start--------- */
+#home_great_team .second_part .child:nth-child(1){
+    margin-top: -50px;
+}
+#home_great_team .second_part .child{
+    margin-top: 240px;
+}
+
+/* --------Company archives end--------- */
+
+/* -------Pricing start------ */
+#pricing .pricing_name {
+    justify-content: center!important;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#pricing .pricing_name .one {
+    width: 100%;
+}
+
+#pricing .pricing_name .tow {
+    width: 100%;
+}
+#pricing .parent_pricing .child_pricing {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* -------Pricing end-------- */
+/* -------more about us start----------- */
+#more_about_us{
+    margin-bottom: 300px;
+}
+#more_about_us .right_side{
+    justify-content: center;
+    align-items: center;
+}
+#more_about_us .right_side img{
+    width: 290px;
+}
+#more_about_us .left_side .land_smart h5 {
+    width: 100%;
+}
+#more_about_us .left_side .land_smart{
+    gap: 20px;
+}
+/* -------more about us end----------- */
+
+
+/* --------blog and news start---------- */
+#home_blog_news .home_blog_news .child {
+    width: 100%;
+    justify-content: center;
+}
+
+/* --------blog and news end---------- */
+
+/* =======================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HOME PAGE END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<======================= */
+.all_page_logo {
+    margin-top: -260px;
+}
+.all_page_btn {
+    margin-top: -260px;
+}
+.all_page_logo .logo_contains .logo_text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.all_page_logo .logo_contains .logo_text h4{
+    font-size: 24px !important;
+}
+.all_page_btn{
+    background-color: red;
+    margin-top: -660px !important;
+    height: 400px !important;
+
+}
+
+
+/* ========================SERVICES DETAILS START===================== */
+#service_details .left_side .green_scape .img_part .img_one{
+    width: 100%;
+}
+#service_details .left_side .green_scape .img_part .img_tow{
+    width: 100%;
+    margin-top: 20px;
+}
+
+#service_details .left_side .solution_we .solution_box .sol_box_one{
+    width: 100%;
+    
+}
+
+#service_details .left_and_right{
+    gap: 80px;
+}
+
+/* ========================SERVICES DETAILS END===================== */
+
+
+/* ------------PROJECT DETAILS START-------------- */
+#project_imformation .left_part {
+    width: 100%;
+}
+
+/* ------------PROJECT DETAILS END-------------- */
+
+/* ================================BLOG PAGE START =========================== */
+#blog .left_side .child .image {
+    width : 100%;
+    height: 100%;
+}
+#blog .left_side .text {
+    padding-left: 10px;
+}
+#blog .left_side .text h4 a {
+    font-size: 24px;
+}
+#blog .right_side .post_categoriey .post .post_text h4 {
+    font-size: 18px !important;
+}
+/* #blog .right_side .about_authority .mikel h4 {
+    font-size: 22px !important;
+} */
+
+#blog .right_side{
+    margin-top: 50px;
+}
+#blog .left_side .blog_details_image .all_images {
+    justify-content: center;
+}
+
+/* ================================BLOG PAGE END =========================== */
+
+
+/* -----------CONTACT PAGE START----------- */
+#contact .contact_box .contact_child {
+    width: 100%;
+}
+#contact_information .name_email .name {
+    width: 100%;
+}
+#contact .contact_box {
+    gap: 20px;
+}
+#contact h4 {
+    /* font-family: 8px !important; */
+}
+/* -----------CONTACT PAGE END----------- */
+
+
+}
+
+/* ==========================SMALL TABLETS (768px - 1023px)=============================== */
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .side_bar {
+    /* width: 100px; */
+    display: none;
+}
+
+#banner .contains{
+    padding: 20px;
+}
+#banner .contains .text_contains{
+    /* margin-left: 200px; */
+    /* background-color: red; */
+    justify-content: flex-end;
+    padding: 20px 0px;
+}
+#banner .contains .text_contains h2 {
+    font-size: 30px;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+#banner .contains .right_contains {
+    align-items: center;
+}
+
+#banner .contains .right_contains .people_pic {
+    margin-left: -90px;
+
+}
+ #banner .contains .right_contains .service_btn p {
+    padding       : 15px 25px;
+    width         : 156px;
+    height        : 40px;
+    font-size     : 12px;
+    margin-bottom: 30px;
+   
+}
+
+#banner .contains .right_contains .service_btn p span {
+    font-family   : var(--font6);
+    font-weight   : 900;
+    font-size     : 12px;
+}
+/* ------ABOUT US START ------- */
+
+#about_us .ab_tow .about_name {
+    padding: 10px;
+}
+
+#about_us .ab_tow h2 {
+    font-size: 30px;
+    padding  : 10px;
+}
+
+#about_us .ab_tow p {
+    padding         : 10px 20px;
+    text-size-adjust: auto;
+}
+
+#about_us .ab_tow .rantal_interior {
+    /* flex-direction: column; */
+    align-items   : center;
+    margin-top    : 20px;
+}
+
+#about_us .ab_tow .rantal_interior .rantal {
+    width: 50%;
+}
+#about_us .ab_tow .rantal_interior .rantal b{
+    line-height: 200%;
+}
+
+#about_us .ab_tow .rantal_interior .interior {
+    width     : 50%;
+    /* margin-top: 20px; */
+}
+#about_us .ab_tow .rantal_interior .interior b{
+    line-height: 200%;
+}
+
+#about_us .ab_tow .tick {
+    width      : 50%;
+    margin-left: 10px;
+}
+
+#about_us .ab_tow .tick p {
+    padding: 0px;
+}
+
+
+#about_us .ab_tow .phn {
+    width      : 40%;
+    margin-left: 50px;
+    margin-top : 30px;
+}
+
+#about_us .ab_tow .phn .phn_icon {
+    padding: 5px;
+}
+
+#about_us .ab_tow .phn .phn_number p:nth-child(1) {
+    margin: -10px;
+}
+
+#about_us .ab_tow .phn .phn_number p:nth-child(2) {
+    margin-left: -10px;
+}
+
+#about_us .ab_tow .read_more_btn {
+    /* background-color: red; */
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    margin-top     : 20px;
+    padding: 10px 40px;
+}
+
+#about_us .ab_tow .read_more_btn .btn_ab {
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* ------ABOUT US END ------- */
+
+/* ------SERVICE START------- */
+#service {
+    height    : 1300px;
+    margin-top: 800px;
+}
+
+#service .srv_one p {
+    font-size: 14px;
+}
+
+#service .srv_one h4 {
+    font-size       : 1px;
+    background-color: red;
+}
+
+#service .srv_tow {
+    margin-top: -40px;
+}
+
+#service .srv_tow .cctd {
+    width: calc(50% - 10px);
+}
+
+#service .srv_three {
+    margin-top: 200px;
+}
+
+
+
+#service .srv_three .srv_right_contains {
+    margin-top: 450px;
+    align-items: center;
+    /* background: red; */
+    width: 100%;
+}
+
+#service .srv_three .srv_right_contains h4 {
+    font-size: 30px;
+    width    : 100%;
+    text-align: center;
+}
+
+#service .srv_three .srv_right_contains p {
+    /* width: 90%; */
+    width    : 80%;
+    padding  : 10px;
+    height   : 200px;
+    font-size: 14px;
+    margin   : 30px 0px;
+
+}
+#service .srv_three .srv_right_check {
+    justify-content: space-between;
+    width: 80%;
+}
+
+/* ------SERVICE END------- */
+
+/* ------Book appoitnment START */
+#book_appoitnment {
+    height    : 1500px;
+    margin-top: 200px;
+}
+
+#book_appoitnment .first_row .tow {
+    height    : 480px;
+    margin-top: 10px;
+
+}
+
+#book_appoitnment .first_row .one {
+    height    : 480px;
+    margin-top: -50px;
+}
+
+#book_appoitnment .second_row {
+    margin-top: 500px;
+}
+#book_appoitnment .second_row .appointment-form {
+    justify-content: center;
+}
+
+#book_appoitnment .second_row h4 {
+    font-size: 42px;
+    width    : 80%;
+}
+
+/* ------Book appoitnment END */
+
+/* --------PORTFOLIO START-------- */
+#portfolio .one h4 {
+    font-size : 30px;
+    margin-top: 10px;
+}
+
+#portfolio {
+    height: 1630px;
+}
+
+#portfolio .tow {
+    justify-content: center;
+}
+#portfolio .tow .card_one {
+    margin-top: 30px;
+    justify-content:center;
+}
+
+/* --------PORTFOLIO END---------- */
+
+
+/* --------Company archives start--------- */
+#home_great_team .second_part .child:nth-child(1) {
+    margin-top: -50px;
+}
+#home_great_team .second_part .child:last-child{
+    margin-bottom: 0px !important;
+}
+
+#home_great_team .second_part .child {
+    margin-top: 240px;
+}
+
+/* --------Company archives end--------- */
+
+/* -------Pricing start------ */
+#pricing .pricing_name{
+    justify-content: center;
+}
+#pricing .pricing_name .one{
+    width: 100%;
+}
+#pricing .pricing_name .tow{
+    width: 100%;
+}
+#pricing .parent_pricing .child_pricing {
+    width     : 100%;
+    margin-top: 30px;
+}
+
+/* -------Pricing end-------- */
+
+
+/* =======================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HOME PAGE START <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<======================= */
+/* ====================NAVIGATION BAR STAR====================== */
+.home_navigation .home_logo img {
+    width : 50px !important;
+    height: auto;
+}
+
+.home_navigation .logo_text h4 {
+    font-size: 18px !important;
+}
+
+.home_navigation .logo_text p {
+    font-size: 14px !important;
+}
+
+/* ====================NAVIGATION BAR END====================== */
+
+
+/* ====================BANNER SECTION START==================== */
+#home_banner .home_side_bar {
+    display: none;
+}
+
+#home_banner .home_banner_image {
+    margin: 0px;
+}
+
+#home_banner .home_banner_image h2 {
+    font-size: 45px;
+    width    : 90%;
+    
+}
+#home_banner .home_banner_image p{
+    width: 400px;
+}
+
+#home_banner .banner_bottom .bottom_bar {
+    display: none;
+}
+
+#home_banner .banner_bottom p {
+    font-size: 24px;
+}
+
+/* ====================BANNER SECTION END==================== */
+/* ====================ABOUT SECTION START==================== */
+#home_about .row .part_one {
+    overflow       : hidden;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+#home_about .row .part_tow {
+    margin-top: 50px;
+}
+
+#home_about .row .part_tow h4 {
+    margin: 20px 0px;
+}
+
+#home_about .row .part_tow p {
+    margin-bottom: 20px;
+    text-align   : center;
+    /* width     : 90%; */
+}
+#home_about .row .part_tow .btn_profile .profile .name_category{
+    margin: 30px 0px;
+}
+#home_about .row .part_tow .btn_profile .profile .name_category p:nth-child(2) {
+    /* margin-bottom: 30px; */
+    margin-top: -20px;
+    margin-left: -60px;
+}
+
+/* ====================ABOUT SECTION END==================== */
+
+
+/* ====================SERVICES SECTION START==================== */
+
+/* ====================SERVICES SECTION END==================== */
+
+/* ====================COMPANY ARCHIVES START====================== */
+
+#company_archives .part_tow {
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* ====================COMPANY ARCHIVES END====================== */
+h4 {
+    font-size: 30px !important;
+}
+
+/* -----book an appointment start------- */
+#home_book_appointment .book_app {
+    justify-content: center;
+}
+
+#home_book_appointment .left_side input {
+    width: 350px;
+}
+
+#home_book_appointment .left_side select {
+    width: 350px;
+}
+
+#home_book_appointment .left_side textarea {
+    width: 350px;
+}
+
+#home_book_appointment .left_side a {
+    width: 350px;
+}
+
+#home_book_appointment .right_side {
+    margin-top: 40px;
+    overflow  : hidden;
+}
+
+/* -----book an appointment end------- */
+
+/* --------blog and news start---------- */
+#home_blog_news .home_blog_news .child {
+    width          : 100%;
+    justify-content: center;
+}
+
+/* --------blog and news end---------- */
+
+/* -------more about us start----------- */
+#more_about_us {
+    margin-bottom: 400px;
+}
+
+#more_about_us .right_side {
+    justify-content: center !important;
+    align-items    : center !important;
+    display: flex;
+    /* background-color: red; */
+    width: 100%;
+    margin-top: 50px;
+}
+
+#more_about_us .right_side img {
+    width: 400px;
+}
+
+#more_about_us .left_side .land_smart{
+    justify-content: space-between;
+}
+
+/* -------more about us end----------- */
+/* =======================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HOME PAGE END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<======================= */
+
+
+/* ================================BLOG PAGE START =========================== */
+#blog .left_side .child .image {
+    width : 100%;
+    height: 100%;
+}
+#blog .left_side .text {
+    padding-left: 10px;
+}
+#blog .left_side .blog_details_image .all_images {
+    justify-content: center;
+}
+/* ================================BLOG PAGE END =========================== */
+
+/* -----------CONTACT PAGE START----------- */
+#contact .contact_box .contact_child {
+    width: 100%;
+}
+#contact_information .name_email .name{
+    width: 100%;
+}
+#contact .contact_box {
+    gap: 20px;
+}
+/* -----------CONTACT PAGE END----------- */
+
+ }
+
+ 
+/* ==========================TABLETS & SMALL DESKTOPS (1024px - 1199px)=============================== */
+ @media (min-width: 1024px) and (max-width: 1199px) {
+#blog .right_side .post_categoriey .post .post_text .date p {
+    font-size: 10px;
+}
+#blog .right_side .post_categoriey .post .post_text h4 {
+    font-size: 14px;
+}
+h4{
+    font-size: 20px;
+}
+ }
+
+
+
+
+
+
+
+
+ @media (min-width:576px) {
+    
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:992px) {
+
+}
+
+@media (min-width:1200px) {
+
+}
+
+@media (min-width:1400px) {
+
+}
