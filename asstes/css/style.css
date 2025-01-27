@@ -824,7 +824,7 @@ transition        : 0.5s ease;
     width              : 100%;
     position           : relative;
     /* background-color: green; */
-    overflow           : hidden;
+    /* overflow           : hidden; */
 }
 
 #about_us .bg_img img {
