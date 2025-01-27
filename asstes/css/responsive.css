@@ -18,7 +18,7 @@
 /* ==========================MOBILE DEVICE (480px - 767px)=============================== */
 
 @media (max-width: 767px) {
-    
+   
     #navigation{
         height: 70px;
     }
@@ -38,6 +38,9 @@
 }
 
 .side_bar{
+    display: none;
+}
+#banner .industry_sidebar{
     display: none;
 }
 #banner .contains .text_contains h2 {
@@ -640,7 +643,11 @@ h4{
 #home_great_team .second_part .team_parent:nth-child(2) {
     margin: 220px 0px;
 }
-
+#about_us .bg_img img {
+    position: absolute;
+    bottom  : 120px;
+    right   : 0px;
+}
 }
 
 /* ==========================SMALL TABLETS (768px - 1023px)=============================== */
@@ -1108,6 +1115,11 @@ h4 {
 
  
 /* ==========================TABLETS & SMALL DESKTOPS (1024px - 1199px)=============================== */
+ @media (min-width: 991px) and (max-width: 1200px) {
+#about_us .about_contains {
+    gap: 10px;
+}
+ }
  @media (min-width: 1024px) and (max-width: 1199px) {
 #blog .right_side .post_categoriey .post .post_text .date p {
     font-size: 10px;
@@ -1132,6 +1144,7 @@ h4{
 #home_book_appointment .book_app {
     justify-content:center;
 }
+
  }
 
 

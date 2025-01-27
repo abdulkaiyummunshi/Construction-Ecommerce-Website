@@ -131,7 +131,6 @@ $('.parent').slick({
     prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
     nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
     responsive: [
-        // Laptop
         {
             breakpoint: 1024,
             settings: {
@@ -168,7 +167,6 @@ $('.blog_and_news').slick({
     prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
     nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
     responsive: [
-        // Laptop
         {
             breakpoint: 1024,
             settings: {
@@ -178,36 +176,42 @@ $('.blog_and_news').slick({
             }
         },
         
-        // {
-        //     breakpoint: 768,
-        //     settings: {
-        //         slidesToShow: 1, 
-        //         slidesToScroll: 1,
-        //         arrows: false, 
-        //     }
-        // },
-  
-        // {
-        //     breakpoint: 480,
-        //     settings: {
-        //         slidesToShow: 1,
-        //         slidesToScroll: 1,
-        //         arrows: false, 
-        //     }
-        // }
+    ]
+});
+
+
+    $('.banner_img_slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots:true,
+    arrows:false,
+    dotsClass:"banner_slider_dots",
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 1, 
+                slidesToScroll: 1,
+                // dots: true,
+            }
+        },
+        
     ]
 });
 
 
 
-    $('.tklove').slick({
-        dots: true,
-        arrows: true,
-        dotsClass: 'container docts-active',
-        autoplay: true,
-        autoplaySpeed: 1000,
-        prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
-        nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
-    });
+    // $('.tklove').slick({
+    //     dots: true,
+    //     arrows: true,
+    //     dotsClass: 'container docts-active',
+    //     autoplay: true,
+    //     autoplaySpeed: 1000,
+    //     prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
+    //     nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
+    // });
 
 });
