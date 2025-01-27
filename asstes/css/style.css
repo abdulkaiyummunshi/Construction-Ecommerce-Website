@@ -736,8 +736,25 @@ transition        : 0.5s ease;
     gap: 20px;
     position: absolute;
     top     : 50%;
-    left    : 0;
+    left    : 20px;
     transform: translateY(-50%);
+}
+#banner .banner_img_slider .banner_slider_dots li.slick-active{
+    border: 2px solid var(--brand);
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 #banner .banner_img_slider .banner_slider_dots .slick-active button{
     background-color: var(--brand);
@@ -747,6 +764,7 @@ transition        : 0.5s ease;
     color: transparent;
     width: 15px;
     height: 15px;
+    /* padding: 20px; */
     border: none;
     border-radius: 50%;
     -webkit-border-radius: 50%;
