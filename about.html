@@ -120,16 +120,6 @@
              </div>
             </div>
         <div class="container">
-            
-            
-            <!-- <ul class="nav_iteam">
-                <li><a href="#">Home + </a></li>
-                <li><a href="#">Services + </a></li>
-                <li><a href="#">Portfolio + </a></li>
-                <li><a href="#">projects + </a></li>
-                <li><a href="#">News + </a></li>
-                <li><a href="#">Contact + </a></li>
-            </ul> -->
 
             <ul class="nav_iteam">
                 <li><a href="home.html">Home + </a></li>
@@ -175,14 +165,35 @@
 <!-- ========OFFCANVAS START============ -->
         <div class="off_canvas">
             <span class="cross_btn"><i class="fa-solid fa-x"></i></span>
-            <ul class="menu_iteam">
-                <li><a href="#">Home +</li>
-                    <li><a href="#">Services +</li>
-                        <li><a href="#">Portfolio +</li>
-                            <li><a href="#">projects +</li>
-                                <li><a href="#">News +</li>
-                        <li><a href="#">Contact +</li>
-                    </ul>
+            
+              <ul class="nav_iteam">
+                <li><a href="home.html">Home + </a></li>
+                <li><a href="service.html">Services + </a>
+                    <ul class="dropdown"> 
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="services_details.html">Service Details</a></li>
+                        <li><a href="#">Comming Soon</a></li>
+                   </ul>
+                </li>
+                <li><a href="#">Portfolio + </a></li>
+
+                <li><a href="#">Pages + </a>
+                     <ul class="dropdown"> 
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="services_details.html"> Service Details</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blog_details.html">Blog Details</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="project_details.html">Project Details</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                   </ul>
+                </li>
+
+                <li><a href="#">News + </a></li>
+                <li><a href="contact.html">Contact + </a></li>
+                       </ul>
                     
                     <ul class="menu_icon">
                         <li class="menu_search"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
@@ -409,6 +420,7 @@
     </section>
     <!-- ===================================<<<<<<<<<<Company archives END>>>>>>>>>>================================== -->
 
+
     <!-- ==================================<<<<<<<<<<GREAT TEAM START>>>>>>>>>>================================= -->
     <section id="home_great_team">
         <div class="container">
@@ -428,7 +440,8 @@
             </div>
 
             <div class="second_part row">
-                <div class="col-lg-4 child">
+                <div class="team_parent">
+                    <div class="col-lg-4 child">
                     <img src="./asstes/images/home/great_team/1.png" alt="">
                     <h4>Savannah Nguyen</h4>
                     <p>Senior Engineer</p>
@@ -440,6 +453,8 @@
                     </ul>
                     <span>-</span>
                 </div>
+                </div>
+                 <div class="team_parent">
                 <div class="col-lg-4 child">
                     <img src="./asstes/images/home/great_team/2.png" alt="">
                     <h4> Darlene Robertson</h4>
@@ -452,6 +467,8 @@
                     </ul>
                     <span>-</span>
                 </div>
+                </div>
+                 <div class="team_parent">
                 <div class="col-lg-4 child">
                     <img src="./asstes/images/home/great_team/3.png" alt="">
                     <h4>Marvin McKinney</h4>
@@ -464,11 +481,12 @@
                     </ul>
                     <span>-</span>
                 </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- ===================================<<<<<<<<<<GREAT TEAM END>>>>>>>>>>================================== -->
-  
+    
     <div class="home_industry">
 
             <img src="asstes/images/banner/industry/1.png" alt="">

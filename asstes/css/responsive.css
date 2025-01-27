@@ -49,7 +49,6 @@
     justify-content: center;
 }
 #banner .contains .right_contains .people_pic {
-    /* background-color: red; */
     width: 100%;
     margin-left: 50%;
     margin-top: 20px;
@@ -58,12 +57,10 @@
 
 /* ------ABOUT US START ------- */
 #about_us {
-    /* margin-top: -400px; */
 }
 #about_us .ab_one .about_image {
     position           : relative;
     margin-bottom: 20px;
-    /* display: none; */
 
 }
 
@@ -172,7 +169,6 @@
     margin-left: -10px;
 }
 #about_us .ab_tow .read_more_btn {
-    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,7 +182,7 @@
 
 /* ------SERVICE START------- */
 #service {
-    height: 1700px;
+    height: 1710px;
     margin-top: 800px;
 }
 #service .srv_one p{
@@ -194,7 +190,6 @@
 }
 #service .srv_one h4 {
     font-size: 1px;
-    background-color: red;
 }
 #service .srv_tow {
     margin-top: -40px;
@@ -224,7 +219,6 @@
     width: 330px;
 }
 #service .srv_three .srv_right_contains p {
-    /* width: 90%; */
     width                : 100%;
     padding              : 10px;
     height               : 200px;
@@ -239,18 +233,16 @@
 #great_team{
     margin-top: -100px;
 }
-#great_team .great_name{
-    /* background-color: red; */
+#great_team img {
+    bottom: 0px;
 }
 #great_team .meet{
-    /* background-color: red; */
     width: 350px;
     font-size: 25px;
 }
 #great_team .parent .left-arrow{
     display: none;
     visibility: hidden;
-    background-color: red;
 
 }
 #great_team .parent .right-arrow{
@@ -286,9 +278,6 @@
 #portfolio .one h4{
     font-size: 30px;
     margin-top: 10px;
-}
-#portfolio{
-    height: 1630px;
 }
 #second_portfolio .one_part .port_title h4{
     font-size: 30px;
@@ -326,10 +315,7 @@
 
 
 /* -----WHY CHOOSE US START------ */
-#why_choose_us{
-    margin-top: 1800px;
-    /* height: 1900px; */
-}
+
 #why_choose_us .row .first_colmun {
     margin-top: 200px;
 }
@@ -341,15 +327,12 @@
 }
 #why_choose_us .row .first_colmun .choose_box .box{
     width: 100%;
-    /* margin-top: 100px; */
-    /* justify-content: center; */
 }
 #why_choose_us .row .second_column{
     margin-top: 150px;
 }
 #why_choose_us .row .second_column .one {
     width: 100%;
-    /* background-color: red */
 }
 #why_choose_us .row .second_column .one .title {
     width: 100%;
@@ -444,14 +427,11 @@
 #home_about .row .part_tow p{
     margin-bottom: 20px;
     text-align: center;
-    /* width: 90%; */
 }
 #home_about .row .part_tow .btn_profile .profile .name_category {
     margin-bottom: 30px;
 }
-#home_about .row .part_tow .btn_profile .profile .name_category p:nth-child(2) {
-    margin-top: -20px;
-}
+
 /* ====================ABOUT SECTION END==================== */
 
 
@@ -487,7 +467,17 @@ h4{
 }
 #home_book_appointment .right_side{
     margin-top: 40px;
-    overflow: hidden;
+}
+#home_book_appointment .right_side span{
+    display: none;
+
+}
+ #home_book_appointment .right_side .phn{
+    display: block;
+ }
+ #home_book_appointment .right_side .phn img{
+    width: 300px ;
+    height: 300px;
 }
 /* -----book an appointment end------- */
 
@@ -565,7 +555,6 @@ h4{
     font-size: 24px !important;
 }
 .all_page_btn{
-    background-color: red;
     margin-top: -660px !important;
     height: 400px !important;
 
@@ -599,7 +588,9 @@ h4{
 }
 
 /* ------------PROJECT DETAILS END-------------- */
-
+#service_details .right_side {
+    margin-top: 50px;
+}
 /* ================================BLOG PAGE START =========================== */
 #blog .left_side .child .image {
     width : 100%;
@@ -614,9 +605,7 @@ h4{
 #blog .right_side .post_categoriey .post .post_text h4 {
     font-size: 18px !important;
 }
-/* #blog .right_side .about_authority .mikel h4 {
-    font-size: 22px !important;
-} */
+
 
 #blog .right_side{
     margin-top: 50px;
@@ -638,11 +627,19 @@ h4{
 #contact .contact_box {
     gap: 20px;
 }
-#contact h4 {
-    /* font-family: 8px !important; */
-}
-/* -----------CONTACT PAGE END----------- */
 
+/* -----------CONTACT PAGE END----------- */
+#home_great_team .second_part .team_parent {
+    width           : 100%;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    height          : 230px !important;
+}
+
+#home_great_team .second_part .team_parent:nth-child(2) {
+    margin: 220px 0px;
+}
 
 }
 
@@ -651,7 +648,6 @@ h4{
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .side_bar {
-    /* width: 100px; */
     display: none;
 }
 
@@ -659,8 +655,6 @@ h4{
     padding: 20px;
 }
 #banner .contains .text_contains{
-    /* margin-left: 200px; */
-    /* background-color: red; */
     justify-content: flex-end;
     padding: 20px 0px;
 }
@@ -710,7 +704,6 @@ h4{
 }
 
 #about_us .ab_tow .rantal_interior {
-    /* flex-direction: column; */
     align-items   : center;
     margin-top    : 20px;
 }
@@ -724,7 +717,6 @@ h4{
 
 #about_us .ab_tow .rantal_interior .interior {
     width     : 50%;
-    /* margin-top: 20px; */
 }
 #about_us .ab_tow .rantal_interior .interior b{
     line-height: 200%;
@@ -759,7 +751,6 @@ h4{
 }
 
 #about_us .ab_tow .read_more_btn {
-    /* background-color: red; */
     display        : flex;
     align-items    : center;
     justify-content: center;
@@ -786,7 +777,6 @@ h4{
 
 #service .srv_one h4 {
     font-size       : 1px;
-    background-color: red;
 }
 
 #service .srv_tow {
@@ -806,7 +796,6 @@ h4{
 #service .srv_three .srv_right_contains {
     margin-top: 450px;
     align-items: center;
-    /* background: red; */
     width: 100%;
 }
 
@@ -817,7 +806,6 @@ h4{
 }
 
 #service .srv_three .srv_right_contains p {
-    /* width: 90%; */
     width    : 80%;
     padding  : 10px;
     height   : 200px;
@@ -831,6 +819,12 @@ h4{
 }
 
 /* ------SERVICE END------- */
+/* ----------SERVICE DETAILS START---------- */
+#service_details .right_side {
+    padding   : 0px 20px;
+    margin-top: 50px;
+}
+/* ----------SERVICE DETAILS END---------- */
 
 /* ------Book appoitnment START */
 #book_appoitnment {
@@ -980,15 +974,10 @@ h4{
 #home_about .row .part_tow p {
     margin-bottom: 20px;
     text-align   : center;
-    /* width     : 90%; */
 }
-#home_about .row .part_tow .btn_profile .profile .name_category{
-    margin: 30px 0px;
-}
+
 #home_about .row .part_tow .btn_profile .profile .name_category p:nth-child(2) {
-    /* margin-bottom: 30px; */
-    margin-top: -20px;
-    margin-left: -60px;
+    padding-bottom: 0px;
 }
 
 /* ====================ABOUT SECTION END==================== */
@@ -1033,7 +1022,6 @@ h4 {
 
 #home_book_appointment .right_side {
     margin-top: 40px;
-    overflow  : hidden;
 }
 
 /* -----book an appointment end------- */
@@ -1055,7 +1043,6 @@ h4 {
     justify-content: center !important;
     align-items    : center !important;
     display: flex;
-    /* background-color: red; */
     width: 100%;
     margin-top: 50px;
 }
@@ -1069,6 +1056,22 @@ h4 {
 }
 
 /* -------more about us end----------- */
+/* -----------get team start--------- */
+#home_great_team .second_part {
+    justify-content: center;
+}
+#home_great_team .second_part .team_parent {
+    width           : 100%;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    height          : 230px !important;
+}
+
+#home_great_team .second_part .team_parent:nth-child(2) {
+    margin: 220px 0px;
+}
+/* -----------get team end--------- */
 /* =======================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HOME PAGE END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<======================= */
 
 
@@ -1095,8 +1098,12 @@ h4 {
 #contact .contact_box {
     gap: 20px;
 }
+
 /* -----------CONTACT PAGE END----------- */
 
+#how_to_work .tow .child {
+    margin: 20px 0px;
+}
  }
 
  
@@ -1111,13 +1118,38 @@ h4 {
 h4{
     font-size: 20px;
 }
+#home_great_team .second_part .team_parent {
+    width           : 100%;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    height          : 230px !important;
+}
+
+#home_great_team .second_part .team_parent:nth-child(2) {
+    margin: 220px 0px;
+}
+#home_book_appointment .book_app {
+    justify-content:center;
+}
  }
 
 
 
+@media (max-width:1200px) {
+    #home_about .row .part_tow h4 {
+        font-size: 40px;
+    }
 
+}
 
+@media (min-width:1023px) and (max-width:1200px) {
+    #more_about_us .right_side img {
+    width : 450px;
+    height: 450px;
+}
 
+}
 
 
  @media (min-width:576px) {
