@@ -648,6 +648,9 @@ h4{
     bottom  : 120px;
     right   : 0px;
 }
+#more_about_us {
+    margin-top: 300px;
+}
 }
 
 /* ==========================SMALL TABLETS (768px - 1023px)=============================== */
@@ -960,7 +963,9 @@ h4{
 #home_banner .banner_bottom p {
     font-size: 24px;
 }
-
+#banner .industry_sidebar {
+    display: none;
+}
 /* ====================BANNER SECTION END==================== */
 /* ====================ABOUT SECTION START==================== */
 #home_about .row .part_one {
@@ -1116,9 +1121,10 @@ h4 {
  
 /* ==========================TABLETS & SMALL DESKTOPS (1024px - 1199px)=============================== */
  @media (min-width: 991px) and (max-width: 1200px) {
-#about_us .about_contains {
+/* #about_us .about_contains {
     gap: 10px;
-}
+    height: 1000px;
+} */
  }
  @media (min-width: 1024px) and (max-width: 1199px) {
 #blog .right_side .post_categoriey .post .post_text .date p {
@@ -1158,9 +1164,12 @@ h4{
 
 @media (min-width:1023px) and (max-width:1200px) {
     #more_about_us .right_side img {
-    width : 450px;
-    height: 450px;
-}
+        width : 450px;
+        height: 450px;
+    }
+    #more_about_us{
+        margin-top: 300px;
+    }
 
 }
 

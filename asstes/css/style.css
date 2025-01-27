@@ -818,171 +818,196 @@ transition        : 0.5s ease;
 /* -------INDUSTRY LOGO END-------- */
 /* ====================BANNER END====================== */
 
-
 /* ====================ABOUT US START====================== */
-#about_us{
-    height: 1000px;
-    width: 100%;
-    position: relative;
+#about_us {
+    height             : 766px;
+    width              : 100%;
+    position           : relative;
+    /* background-color: green; */
+    overflow           : hidden;
 }
-#about_us .bg_img img{
+
+#about_us .bg_img img {
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom  : 0px;
+    right   : 0px;
+    z-index : -100000000000;
 }
-#about_us .about_contains{
+
+#about_us .about_contains {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
+    align-items    : center;
+    width          : 100%;
+    height         : 100%;
+    padding        : 0;
+}
+
+#about_us .ab_one {
+    height             : 100%;
+    /* width           : 50%; */
+    /* background-color: orange; */
+}
+
+/* #about_us .ab_one .img_iteam{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 100%;
-    padding: 0;
-}
-#about_us .ab_one{
-    height: 100%;
+} */
+
+#about_us .ab_one .about_image {
+    position           : relative;
+    /* background-color: rgb(73, 63, 63); */
+    height             : 100%;
+
 }
 
- 
-#about_us .ab_one .about_image{
-    position: relative;
-    height: 100%;
-    
+#about_us .ab_one .about_image img:nth-child(1) {
+    position: absolute;
+    top     : 140px;
+    left    : -26px;
+    width   : 280px;
+    height  : 300px;
 }
 
-#about_us .ab_one .about_image img:nth-child(1){
+#about_us .ab_one .about_image img:nth-child(2) {
     position: absolute;
-    top: 140px;
-    left: -26px; 
-    width: 280px;
-    height: 300px;
+    top     : 123px;
+    left    : -43px;
+    width   : 314px;
+    height  : 344px;
 }
 
-#about_us .ab_one .about_image img:nth-child(2){
+#about_us .ab_one .about_image img:nth-child(3) {
     position: absolute;
-    top: 123px;
-    left: -43px;
-    width: 314px;
-    height: 344px;
-}
-#about_us .ab_one .about_image img:nth-child(3){
-    position: absolute;
-        top: 149px;
-    left: 229px;
-    width: 300px;
-    height: 300px;
+    top     : 149px;
+    left    : 229px;
+    width   : 300px;
+    height  : 300px;
 }
 
-#about_us .ab_one .about_image img:nth-child(4){
+#about_us .ab_one .about_image img:nth-child(4) {
     position: absolute;
-         top: 129px;
-    left: 317px;
-}
-#about_us .ab_one .about_image img:nth-child(5){
-    position: absolute;
-    top: 315px;
-    left: 81px; 
-    width: 300px;
-    height: 300px;
+    top     : 129px;
+    left    : 317px;
 }
 
-#about_us .ab_one .about_image img:nth-child(6){
+#about_us .ab_one .about_image img:nth-child(5) {
     position: absolute;
-         top: 475px;
-    left: 54px;
+    top     : 315px;
+    left    : 81px;
+    width   : 300px;
+    height  : 300px;
 }
 
-#about_us .ab_tow{
-    height: 80%;
+#about_us .ab_one .about_image img:nth-child(6) {
+    position: absolute;
+    top     : 475px;
+    left    : 54px;
+}
+
+#about_us .ab_tow {
+    height             : 80%;
     /* background-color: rgb(0, 250, 79); */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-}
-#about_us .ab_tow .about_name{
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
+    display            : flex;
+    flex-direction     : column;
+    justify-content    : space-evenly;
+    align-items        : center;
 }
 
-#about_us .ab_tow .about_name p{
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 139%;
-    text-transform: uppercase;
-    color: var(--brand);
-    margin-left: 10px;
+#about_us .ab_tow .about_name {
+    display            : flex;
+    justify-content    : flex-start;
+    /* background-color: red; */
+    width              : 100%;
 }
+
+#about_us .ab_tow .about_name p {
+    font-family   : var(--font-family);
+    font-weight   : 600;
+    font-size     : 18px;
+    line-height   : 139%;
+    text-transform: uppercase;
+    color         : var(--brand);
+    margin-left   : 10px;
+}
+
 /* #about_us .ab_tow .about_name .border_top{
     border: 2px solid tomato;
     width: 5px;
     height: 2px;
 } */
-#about_us .ab_tow h2{
+#about_us .ab_tow h2 {
     font-family: var(--font-family);
     font-weight: 700;
     font-size  : 48px;
     line-height: 121%;
     color      : var(--title-color);
 }
-#about_us .ab_tow .about_para{
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 162%;
-    color: var(--boby);
-    /* width: 91%; */
+
+#about_us .ab_tow .about_para {
+    font-family        : var(--second-family);
+    font-weight        : 400;
+    font-size          : 16px;
+    line-height        : 162%;
+    color              : var(--boby);
+    /* width           : 91%; */
     /* background-color: red; */
-    /* text-align: lef; */
-}
-#about_us .ab_tow .rantal_interior{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* background-color: rgb(147, 0, 81); */
-    /* align-items: center; */
-    width: 100%;
-    
+    /* text-align      : lef; */
 }
 
-#about_us .ab_tow .rantal_interior .rantal{
-    /* background-color: #ff5e14; */
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
+#about_us .ab_tow .rantal_interior {
+    display            : flex;
+    flex-wrap          : wrap;
+    justify-content    : center;
+    /* background-color: rgb(147, 0, 81); */
+    /* align-items     : center; */
+    width              : 100%;
+
 }
-#about_us .ab_tow .rantal_interior .rantal p{
+
+#about_us .ab_tow .rantal_interior .rantal {
+    /* background-color: #ff5e14; */
+    display        : flex;
+    justify-content: space-between;
+    width          : 50%;
+}
+
+#about_us .ab_tow .rantal_interior .rantal p {
     /* background-color: red; */
     /* width: 50%; */
     height: 100%;
-    
+
 }
-#about_us .ab_tow .rantal_interior .rantal p span{
-    padding: 10px;
+
+#about_us .ab_tow .rantal_interior .rantal p span {
+    padding    : 10px;
     line-height: 2;
-    font-size: 30px;
-    border : 2px solid rgba(111, 106, 105, 0.157);
-    color: var(--brand);
+    font-size  : 30px;
+    border     : 2px solid rgba(111, 106, 105, 0.157);
+    color      : var(--brand);
 }
-#about_us .ab_tow .rantal_interior .rantal b{
+
+#about_us .ab_tow .rantal_interior .rantal b {
     font-family: var(--font-family);
     font-weight: 600;
     font-size  : 20px;
     line-height: 140%;
     color      : var(--title-color);
-    /* width: 50%; */
+    /* width   : 50%; */
 }
 
-#about_us .ab_tow .rantal_interior .interior{
+#about_us .ab_tow .rantal_interior .interior {
     /* background-color: #53bb16; */
-    display: flex;
+    display           : flex;
     /* justify-content: space-around; */
-    width: 50%;
-    /* margin-left: 20px; */
+    width             : 50%;
+    /* margin-left    : 20px; */
 }
+
 #about_us .ab_tow .rantal_interior .interior p {
     /* background-color: red; */
     /* width: 50%; */
@@ -994,121 +1019,124 @@ transition        : 0.5s ease;
     padding    : 10px;
     line-height: 2;
     font-size  : 30px;
-    border : 2px solid rgba(111, 106, 105, 0.157);
-    color: var(--brand);
+    border     : 2px solid rgba(111, 106, 105, 0.157);
+    color      : var(--brand);
 }
 
 #about_us .ab_tow .rantal_interior .interior b {
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size  : 20px;
-    line-height: 140%;
-    color      : var(--title-color);
-    margin-left: 20px;
-    /* margin-top: 20px; */
+    font-family        : var(--font-family);
+    font-weight        : 600;
+    font-size          : 20px;
+    line-height        : 140%;
+    color              : var(--title-color);
+    margin-left        : 20px;
+    /* margin-top      : 20px; */
     /* background-color: red; */
-    width: 150px;
+    width              : 150px;
 }
-#about_us .ab_tow .tick_phn{
+
+#about_us .ab_tow .tick_phn {
     /* background-color: red; */
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    width          : 100%;
+    display        : flex;
+    flex-wrap      : wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items    : center;
 }
-#about_us .ab_tow .tick{
+
+#about_us .ab_tow .tick {
     width: 65%;
 }
-#about_us .ab_tow .tick p .check_round{
-    border: 1px solid var(--brand);
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    text-align: center;
-    color: var(--brand);
-    border-radius: 100%;
+
+#about_us .ab_tow .tick p .check_round {
+    border               : 1px solid var(--brand);
+    width                : 20px;
+    height               : 20px;
+    line-height          : 20px;
+    text-align           : center;
+    color                : var(--brand);
+    border-radius        : 100%;
     -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-    display: inline-block;
-    margin-top: 20px;
+    -moz-border-radius   : 100%;
+    -ms-border-radius    : 100%;
+    -o-border-radius     : 100%;
+    display              : inline-block;
+    margin-top           : 20px;
 }
-#about_us .ab_tow .phn{
-    display: flex;
+
+#about_us .ab_tow .phn {
+    display            : flex;
     /* background-color: cyan; */
-    width: 35%;
-    justify-content: space-around;
-    align-items: center;
+    width              : 35%;
+    justify-content    : space-around;
+    align-items        : center;
 }
-#about_us .ab_tow .phn .phn_icon{
-    color: var(--brand);
-    padding: 10px;
+
+#about_us .ab_tow .phn .phn_icon {
+    color    : var(--brand);
+    padding  : 10px;
     font-size: 30px;
-    z-index: 5;
+    z-index  : 5;
 }
-#about_us .ab_tow .phn .phn_number p:nth-child(1){
+
+#about_us .ab_tow .phn .phn_number p:nth-child(1) {
     font-family: var(--font-family);
     font-weight: 600;
-    font-size: 14px;
+    font-size  : 14px;
     line-height: 143%;
-    color: var(--boby);
+    color      : var(--boby);
 }
-#about_us .ab_tow .phn .phn_number p:nth-child(2){
+
+#about_us .ab_tow .phn .phn_number p:nth-child(2) {
     font-family: var(--font-family);
     font-weight: 600;
     font-size  : 20px;
     line-height: 140%;
     color      : var(--title-color);
 }
-#about_us .ab_tow .read_more_btn .btn_ab{
-    border-radius: 5px;
-    padding: 15px 10px;
-    /* width: 150px; */
-    height: 56px;
-    /* line-height: 20px; */
+
+#about_us .ab_tow .read_more_btn .btn_ab {
+    border-radius   : 5px;
+    padding         : 15px 10px;
+    /* width        : 150px; */
+    height          : 56px;
+    /* line-height  : 20px; */
     background-color: var(--brand);
-    text-align: center;
+    text-align      : center;
 }
-#about_us .ab_tow .read_more_btn span .right_arrow{
+
+#about_us .ab_tow .read_more_btn span .right_arrow {
     font-family: var(--font6);
     font-weight: 900;
-    font-size: 14px;
+    font-size  : 14px;
     line-height: 171%;
 }
-#about_us .ab_tow .read_more_btn{
-    margin-top: 30px;
+
+#about_us .ab_tow .read_more_btn {
+
     width: 100%;
 }
-#about_us .ab_tow .read_more_btn span a{
-    font-family: var(--second-family);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 87%;
+
+#about_us .ab_tow .read_more_btn span a {
+    font-family   : var(--second-family);
+    font-weight   : 700;
+    font-size     : 16px;
+    line-height   : 87%;
     text-transform: uppercase;
-    color: var(--white);
+    color         : var(--white);
 }
 
 /* ====================ABOUT US END====================== */
-
-/* ====================SERVICE SECTION START==================== */
 #service{
     overflow: hidden;
-    /* margin-top: 20px; */
     background: rgba(0, 0, 0, 0.17) url(../images/services/Group.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* height: 944px; */
-    /* opacity: .17; */
     background-color: #8480808e;
     z-index: 1;
-    /* background-color: yellow;
-     */
 }
 #service .srv_one{
-    /* background-color: green; */
     height: 257px;
     width: 100%;
     display: flex;
@@ -1119,7 +1147,6 @@ transition        : 0.5s ease;
 #service .srv_one .srv_name{
     display: flex;
     gap: 20px;
-    /* background-color: red; */
 }
 #service .srv_one .srv_name p{
     font-family: var(--font-family);
