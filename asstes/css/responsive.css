@@ -18,7 +18,10 @@
 /* ==========================MOBILE DEVICE (480px - 767px)=============================== */
 
 @media (max-width: 767px) {
-   
+
+   #search_bar input{
+    width: 80%;
+   }
     #navigation{
         height: 70px;
     }
@@ -28,13 +31,18 @@
     margin-left: 10px;
 }
 #navigation .logo .logo_text{
-    margin-top: -5px;
+    /* margin-top: -5px; */
 }
 #navigation .logo .logo_text h4{
     font-size: 20px !important;
 }
 #navigation .logo .logo_text p{
-    margin-top: -5px;
+    /* margin-top: -5px; */
+}
+
+#navigation .logo_contains img {
+    width : 50px;
+    height: auto;
 }
 
 .side_bar{
@@ -43,9 +51,24 @@
 #banner .industry_sidebar{
     display: none;
 }
+#banner .contains .text_contains{
+     /* padding: 50px 20px; */
+}
 #banner .contains .text_contains h2 {
-    font-size: 24px;
+    font-size: 20px !important;
     margin-top: 20px;
+     /* padding: 50px 20px; */
+}
+#banner .contains .right_contains h4{
+    font-size: 16px !important;
+}
+#banner .contains .right_contains .service_btn p {
+    width         : 150px;
+    height        : 45px;
+    line-height: 30px;
+    font-size     : 12px !important;
+    padding: 8px;
+    text-align: center;
 }
 #banner .contains .right_contains {
     align-items: center;
@@ -56,178 +79,83 @@
     margin-left: 50%;
     margin-top: 20px;
 }
-
+h2{
+    font-size: 28px !important;
+}
+h4{
+    font-size: 24px !important;
+}
+p{
+    font-size: 14px !important;
+    
+}
+a{
+    font-size: 14px !important;
+    
+}
 
 /* ------ABOUT US START ------- */
-#about_us {
-}
-#about_us .ab_one .about_image {
-    position           : relative;
-    margin-bottom: 20px;
-
-}
-
-#about_us .ab_one .about_image img:nth-child(1) {
-    position: absolute;
-    top     : 150px;
-    left    : 0px;
-    width   : 200px;
-    height  : 230px;
-}
-
-#about_us .ab_one .about_image img:nth-child(2) {
-    position: absolute;
-    top     : 140px;
-    left    : -30px;
-    width   : 260px;
-    height  : 260px;
-    display: none;
-}
-
-#about_us .ab_one .about_image img:nth-child(3) {
-    position: absolute;
-    top     : 160px;
-    left    : 190px;
-    width   : 220px;
-    height  : 220px;
-}
-
-#about_us .ab_one .about_image img:nth-child(4) {
-    position: absolute;
-    top     : 129px;
-    left    : 317px;
-    display: none;
-}
-
-#about_us .ab_one .about_image img:nth-child(5) {
-    position: absolute;
-    top     : 290px;
-    left    : 81px;
-    width   : 220px;
-    height  : 220px;
-}
-
-#about_us .ab_one .about_image img:nth-child(6) {
-    position: absolute;
-    top     : 455px;
-    left    : 54px;
-    width: 250px;
-    height: 250px;
-    display: none;
-}
-
-
-
-
-
-
-#about_us .ab_tow .about_name {
-    padding: 10px;
-}
-
 #about_us .ab_tow h2 {
-    font-size: 30px;
-    padding: 10px;
+font-size: 22px !important;
 }
-#about_us .ab_tow p{
-    padding: 10px 20px;
-    text-size-adjust:auto ;
+#about_us .ab_tow .rantal_interior{
+    gap: 20px;
 }
-#about_us .ab_tow .rantal_interior {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-#about_us .ab_tow .rantal_interior .rantal {
-    width: 80%;
-}
-
-#about_us .ab_tow .rantal_interior .interior {
-    width: 80%;
-    margin-top: 20px;
-}
-#about_us .ab_tow .tick {
+#about_us .ab_tow .rantal_interior .rantal{
     width: 100%;
-    margin-left: 10px;
+    padding: 0px 10px;
 }
-#about_us .ab_tow .tick p{
-    padding: 0px;
-}
-#about_us .ab_tow .tick p:nth-child(2){
-    margin-top: -10px;
-}
-#about_us .ab_tow .phn {
-    width: 60%;
-    margin-left: 50px;
-    margin-top: 30px;
+#about_us .ab_tow .rantal_interior .rantal p span {
+    font-size  : 20px;
+    color      : var(--brand);
 }
 
-#about_us .ab_tow .phn .phn_icon {
-    padding: 5px;
+#about_us .ab_tow .rantal_interior .rantal b {
+    font-size  : 16px;
+    width: 100%;
 }
-#about_us .ab_tow .phn .phn_number p:nth-child(1) {
-    margin:-10px;
+#about_us .ab_tow .rantal_interior .interior{
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0px 10px;
 }
-#about_us .ab_tow .phn .phn_number p:nth-child(2) {
-    margin-left: -10px;
+#about_us .ab_tow .rantal_interior .interior p span {
+    font-size  : 20px;
+    color      : var(--brand);
+}
+#about_us .ab_tow .rantal_interior .interior b {
+    /* background-color: yellow !important; */
+    width: 100% !important;
+    font-size  : 16px !important;
+}
+#about_us .ab_tow .tick{
+    width: 100%;
+    padding: 0px 10px;
+}
+#about_us .ab_tow .phn{
+    width: 100%;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 0px 10px;
+}
+#about_us .ab_tow .tick_phn {
+    gap: 20px;
 }
 #about_us .ab_tow .read_more_btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-}
-#about_us .ab_tow .read_more_btn span {
-   padding: 15px 15px;
-   text-align: center;
+    padding: 0px 10px;
 }
 /* ------ABOUT US END ------- */
 
 /* ------SERVICE START------- */
-#service {
-    height: 1710px;
-    margin-top: 800px;
-}
-#service .srv_one p{
-    font-size: 14px;
-}
-#service .srv_one h4 {
-    font-size: 1px;
-}
-#service .srv_tow {
-    margin-top: -40px;
-}
 #service .srv_tow .cctd {
     width: 100%;
 }
-#service .srv_three {
+#service .srv_three{
     margin-top: 500px;
 }
-#service .srv_three .rectangle .first_img {
-    width              : 268px;
-    height             : 248px;
-}
-
-#service .srv_three .rectangle img {
-    top     : 20px;
-    width: 200px;
-    height: 200px;
-    right: -60%;
-}
-#service .srv_three .srv_right_contains {
-    margin-top: 400px;
-}
-#service .srv_three .srv_right_contains h4{
-    font-size: 22px;
-    width: 330px;
-}
-#service .srv_three .srv_right_contains p {
-    width                : 100%;
-    padding              : 10px;
-    height               : 200px;
-    font-size            : 14px;
-    margin: 20px 0px;  
-
+#service .srv_three .srv_right_contains{
+    margin-top: 50px;
 }
 /* ------SERVICE END------- */
 
@@ -439,7 +367,12 @@
 
 
 /* ====================SERVICES SECTION START==================== */
-
+#service .srv_tow .cctd {
+    width: 100%;
+}
+.tk-1 {
+    width: 100% !important;
+}
 /* ====================SERVICES SECTION END==================== */
 
 /* ====================COMPANY ARCHIVES START====================== */
@@ -581,6 +514,9 @@ h4{
 #service_details .left_and_right{
     gap: 80px;
 }
+#service_details .left_side .img_number .number {
+    width: 100%;
+}
 
 /* ========================SERVICES DETAILS END===================== */
 
@@ -603,7 +539,8 @@ h4{
     padding-left: 10px;
 }
 #blog .left_side .text h4 a {
-    font-size: 24px;
+    font-size: 24px !important;
+    /* background-color: red; */
 }
 #blog .right_side .post_categoriey .post .post_text h4 {
     font-size: 18px !important;
@@ -643,14 +580,11 @@ h4{
 #home_great_team .second_part .team_parent:nth-child(2) {
     margin: 220px 0px;
 }
-#about_us .bg_img img {
-    position: absolute;
-    bottom  : 120px;
-    right   : 0px;
-}
+
 #more_about_us {
     margin-top: 300px;
 }
+
 }
 
 /* ==========================SMALL TABLETS (768px - 1023px)=============================== */
@@ -660,7 +594,11 @@ h4{
     .side_bar {
     display: none;
 }
-
+#navigation .logo_text h4{
+    /* margin-top: -15px;
+    margin-bottom: 5px; */
+    font-size: 24px !important;
+}
 #banner .contains{
     padding: 20px;
 }
@@ -699,135 +637,19 @@ h4{
 }
 /* ------ABOUT US START ------- */
 
-#about_us .ab_tow .about_name {
-    padding: 10px;
-}
-
-#about_us .ab_tow h2 {
-    font-size: 30px;
-    padding  : 10px;
-}
-
-#about_us .ab_tow p {
-    padding         : 10px 20px;
-    text-size-adjust: auto;
-}
-
-#about_us .ab_tow .rantal_interior {
-    align-items   : center;
-    margin-top    : 20px;
-}
-
-#about_us .ab_tow .rantal_interior .rantal {
-    width: 50%;
-}
-#about_us .ab_tow .rantal_interior .rantal b{
-    line-height: 200%;
-}
-
-#about_us .ab_tow .rantal_interior .interior {
-    width     : 50%;
-}
-#about_us .ab_tow .rantal_interior .interior b{
-    line-height: 200%;
-}
-
-#about_us .ab_tow .tick {
-    width      : 50%;
-    margin-left: 10px;
-}
-
-#about_us .ab_tow .tick p {
-    padding: 0px;
-}
-
-
-#about_us .ab_tow .phn {
-    width      : 40%;
-    margin-left: 50px;
-    margin-top : 30px;
-}
-
-#about_us .ab_tow .phn .phn_icon {
-    padding: 5px;
-}
-
-#about_us .ab_tow .phn .phn_number p:nth-child(1) {
-    margin: -10px;
-}
-
-#about_us .ab_tow .phn .phn_number p:nth-child(2) {
-    margin-left: -10px;
-}
-
-#about_us .ab_tow .read_more_btn {
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    margin-top     : 20px;
-    padding: 10px 40px;
-}
-
-#about_us .ab_tow .read_more_btn .btn_ab {
-    padding: 15px 30px;
-    text-align: center;
-}
 
 /* ------ABOUT US END ------- */
 
 /* ------SERVICE START------- */
-#service {
-    height    : 1300px;
-    margin-top: 800px;
+.tk-1 {
+    width: 100% !important;
 }
-
-#service .srv_one p {
-    font-size: 14px;
-}
-
-#service .srv_one h4 {
-    font-size       : 1px;
-}
-
-#service .srv_tow {
-    margin-top: -40px;
-}
-
 #service .srv_tow .cctd {
-    width: calc(50% - 10px);
+    width: calc(50% - 20px);
 }
-
 #service .srv_three {
-    margin-top: 200px;
+    margin-top: 150px;
 }
-
-
-
-#service .srv_three .srv_right_contains {
-    margin-top: 450px;
-    align-items: center;
-    width: 100%;
-}
-
-#service .srv_three .srv_right_contains h4 {
-    font-size: 30px;
-    width    : 100%;
-    text-align: center;
-}
-
-#service .srv_three .srv_right_contains p {
-    width    : 80%;
-    padding  : 10px;
-    height   : 200px;
-    font-size: 14px;
-    margin   : 30px 0px;
-
-}
-#service .srv_three .srv_right_check {
-    justify-content: space-between;
-    width: 80%;
-}
-
 /* ------SERVICE END------- */
 /* ----------SERVICE DETAILS START---------- */
 #service_details .right_side {
@@ -1116,15 +938,35 @@ h4 {
 #how_to_work .tow .child {
     margin: 20px 0px;
 }
+
+h2 {
+    font-size: 42px !important;
+}
+
+
+h4 {
+    font-size: 32px !important;
+}
+
+p {
+    font-size: 14px !important;
+
+}
+
+a {
+    font-size: 14px !important;
+
+}
+#blog .left_side .text h4 a {
+    font-size       : 32px !important;
+    /* background-color: red; */
+}
  }
 
  
 /* ==========================TABLETS & SMALL DESKTOPS (1024px - 1199px)=============================== */
  @media (min-width: 991px) and (max-width: 1200px) {
-/* #about_us .about_contains {
-    gap: 10px;
-    height: 1000px;
-} */
+
  }
  @media (min-width: 1024px) and (max-width: 1199px) {
 #blog .right_side .post_categoriey .post .post_text .date p {
@@ -1175,7 +1017,7 @@ h4{
 
 
  @media (min-width:576px) {
-    
+
 }
 
 @media (min-width:768px) {
@@ -1193,3 +1035,6 @@ h4{
 @media (min-width:1400px) {
 
 }
+
+
+
