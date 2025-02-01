@@ -2912,6 +2912,7 @@ color      : var(--border);
 flex-direction : column;
 justify-content: center;
 align-items    : center;
+gap: 20px;
 }
 #home_banner .home_banner_image .banner_overly{
     /* background-color: #00000096; */
@@ -2953,12 +2954,13 @@ align-items    : center;
 
 #home_banner .home_banner_image .home_btn{
     margin: 20px 5px;
+    /* background-color: red; */
 }
 #home_banner .home_banner_image .home_btn .service_btn{
     border-radius: 5px;
     padding      : 22px 30px;
-    width        : 198px;
-    height       : 56px;
+    /* width        : 198px; */
+    /* height       : 56px; */
     background: var(--brand);
     margin-right: 15px;
 
@@ -2970,6 +2972,7 @@ align-items    : center;
     line-height   : 87%;
     text-transform: uppercase;
     color         : var(--white);
+    /* background-color: red; */
 }
 #home_banner .home_banner_image .home_btn .contact_us a{
     font-family             : var(--second-family);
@@ -3173,6 +3176,7 @@ align-items    : center;
     line-height: 121%;
     text-align : center;
     color      : var(--title-color);
+    margin-top: 20px;
 }
 #home_service .home_srv_img{
     display: flex;
@@ -3950,9 +3954,9 @@ align-items    : center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-height: 517px;
+    height: 517px;
     margin-top: 120px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 #get_consuitation .name_get{
     display: flex;
@@ -4030,7 +4034,7 @@ align-items    : center;
 #more_about_us{
     margin-top: 400px;
     height: 500px;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* background-color: red; */
 }
 #more_about_us .container{

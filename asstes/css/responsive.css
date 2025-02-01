@@ -18,7 +18,9 @@
 /* ==========================MOBILE DEVICE (480px - 767px)=============================== */
 
 @media (max-width: 767px) {
-
+        #get_consuitation {
+            margin-bottom:400px !important;
+        }
    #search_bar input{
     width: 80%;
    }
@@ -340,6 +342,17 @@ font-size: 22px !important;
 #home_banner .banner_bottom p {
     font-size: 20px;
 }
+#home_banner .home_banner_image p{
+    /* background-color: red; */
+    padding: 0px 30px;
+}
+#home_banner .home_banner_image .home_btn .service_btn a{
+    font-size: 12px !important;
+    
+}
+#home_banner .home_banner_image .home_btn .service_btn {
+    padding: 10px 10px 14px 10px;
+}
 /* ====================BANNER SECTION END==================== */
 
 /* ====================ABOUT SECTION START==================== */
@@ -478,7 +491,10 @@ h4{
 }
 
 /* --------blog and news end---------- */
-
+#get_consuitation .name_get h4 {
+    font-size       : 20px !important;
+    width: 100%;
+}
 /* =======================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HOME PAGE END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<======================= */
 .all_page_logo {
     margin-top: -260px;
@@ -817,6 +833,10 @@ h4{
 #home_about .row .part_tow .btn_profile .profile .name_category p:nth-child(2) {
     padding-bottom: 0px;
 }
+#home_about .row .part_tow .working_exparience p:nth-child(1) {
+    font-size: 70px !important;
+    /* color : red; */
+}
 
 /* ====================ABOUT SECTION END==================== */
 
@@ -893,6 +913,7 @@ h4 {
     justify-content: space-between;
 }
 
+
 /* -------more about us end----------- */
 /* -----------get team start--------- */
 #home_great_team .second_part {
@@ -910,6 +931,12 @@ h4 {
     margin: 220px 0px;
 }
 /* -----------get team end--------- */
+
+#get_consuitation .name_get h4 {
+    font-size: 30px !important;
+    width    : 80%;
+}
+
 /* =======================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HOME PAGE END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<======================= */
 
 
@@ -1000,11 +1027,26 @@ h4{
  }
 
 
+ @media (min-width: 0px) and (max-width:250px){
+        #get_consuitation {
+        margin-bottom: 600px !important;
+    }
+ }
+
+@media (min-width:1023px) and (max-width:1200px){
+            #get_consuitation {
+            margin-bottom: 400px !important;
+        }
+}
 
 @media (max-width:1200px) {
     #home_about .row .part_tow h4 {
         font-size: 40px;
     }
+        /* #get_consuitation {
+        margin-bottom: 300px !important;
+    } */
+
 
 }
 
