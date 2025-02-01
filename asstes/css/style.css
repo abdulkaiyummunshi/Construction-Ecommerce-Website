@@ -50,8 +50,8 @@ p {
     --font8        : "Manrope", sans-serif;
     --font9        : "DM Sans", sans-serif;
 }
-.banner_section .child_name a:nth-child(2) {
-    color: var(--brand);
+.clr_brand{
+    color: var(--brand) !important;
 }
 .border_top{
     width: 30px;
