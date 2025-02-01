@@ -20,15 +20,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <style>
+        .ab_border{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-items: flex-end;
+            gap: 8px;
+            margin-top: 5px;
+        }
+        .border_top_ab{
+            width: 30px;
+            height: 2px;
+            background-color: #ff5e14;
+        }
+        .border_bottom_ab{
+            width: 20px;
+            height: 2px;
+            background-color: #ff5e14;
+        }
+    </style>
 </head>
 <body>
          <!-- ==================================<<<<<<<<<<NAVIGATION BAR START>>>>>>>>>>================================= -->
     <nav id="navigation" class="home_navigation">
-        <div class="logo home_logo">
+        <div class="logo home_logo" style="margin-left: 0px;">
              <div class="logo_contains home_logo">
                    <a href="index.html"><img src="asstes/images/logo.png" alt="This is Logo"></a>
-            <div class="logo_text">
+            <div class="logo_text" style="padding-right: 20px;">
                 <a href="index.html">
                     <h4>BuildWoll</h4>
                 <p>Construction</p>
@@ -177,10 +196,10 @@
 
           <div class="col-lg-6 col-12 part_tow">
              <div class="port book_appo_name">
-                        <span style="display: flex; flex-direction: column; justify-content: space-around; align-items: flex-end;">
-                    <div class="border_top"></div>
-                    <div class="border_bottom"></div>
-                 </span>
+                       <span class="ab_border">
+                        <div class="border_top_ab"></div>
+                        <div class="border_bottom_ab"></div>
+                       </span>
                         <p class="border_text">About us</p>
                        
                         

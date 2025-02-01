@@ -360,9 +360,13 @@ font-size: 22px !important;
     text-align: center;
 }
 #home_about .row .part_tow .btn_profile .profile .name_category {
-    margin-bottom: 30px;
-}
+    /* margin-bottom: 30px; */
 
+}
+#home_about .row .part_tow .working_exparience p:nth-child(1){
+    font-size: 50px !important;
+    /* color: red; */
+}
 /* ====================ABOUT SECTION END==================== */
 
 
