@@ -18,6 +18,9 @@
 /* ==========================MOBILE DEVICE (480px - 767px)=============================== */
 
 @media (max-width: 767px) {
+  #home_great_team .second_part .child{
+    justify-content: center !important;
+  }  
         #get_consuitation {
             margin-bottom:400px !important;
         }
