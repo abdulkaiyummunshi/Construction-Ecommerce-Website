@@ -50,6 +50,9 @@ p {
     --font8        : "Manrope", sans-serif;
     --font9        : "DM Sans", sans-serif;
 }
+.banner_section .child_name a:nth-child(2) {
+    color: var(--brand);
+}
 .border_top{
     width: 30px;
     height: 2px;
@@ -75,6 +78,26 @@ color         : var(--brand);
     height          : 15px;
     background-color: var(--border);
     line-height     : 15px;
+}
+.ab_border {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    align-items   : flex-end;
+    gap           : 8px;
+    margin-top    : 5px;
+}
+
+.border_top_ab {
+    width           : 30px;
+    height          : 2px;
+    background-color: #ff5e14;
+}
+
+.border_bottom_ab {
+    width           : 20px;
+    height          : 2px;
+    background-color: #ff5e14;
 }
 /* COMMOON CSS END */
 
@@ -3030,7 +3053,7 @@ gap: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0px 0px 0px 50px;
+    /* padding: 0px 0px 0px 50px; */
     /* align-items: center; */
 }
 #home_about .row .part_tow h4{
