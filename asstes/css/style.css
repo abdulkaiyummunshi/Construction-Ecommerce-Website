@@ -197,6 +197,7 @@ color         : var(--brand);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     gap: 9px;
+    /* background-color: var(--brand); */
     background-color: var(--border);
     justify-content: center;
     align-items: flex-start;
@@ -2904,6 +2905,7 @@ color      : var(--border);
     width: 100%;
     margin: 50px 0px 50px 50px;
     position : relative;
+    z-index: -1;
     
 }
 #home_banner .home_banner_image .main_banner_contains{
@@ -4966,6 +4968,9 @@ line-height: 40px;
 }
 
 /* -----------HOW TO BUIL START----------- */
+#how_to_build {
+    margin-top: 50px;
+}
 #how_to_build .contains{
     display: flex;
     flex-direction: column;
@@ -5065,6 +5070,7 @@ line-height: 40px;
     font-size  : 48px;
     line-height: 121%;
     color      : var(--title-color);
+    margin-bottom: 20px;
 }
 #project_summery p{
     font-family: var(--second-family);

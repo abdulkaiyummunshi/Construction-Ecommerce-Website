@@ -121,6 +121,7 @@ showButtons.forEach((showButton) => {
 // ------GREAT TEAM--------
 
 $(function () {
+
 $('.parent').slick({
     infinite: true,
     slidesToShow: 4,
@@ -157,6 +158,7 @@ $('.parent').slick({
         }
     ]
 });
+
 
 $('.blog_and_news').slick({
     infinite: true,
@@ -201,6 +203,8 @@ $('.blog_and_news').slick({
         
     ]
 });
+    
+
 
 
 
