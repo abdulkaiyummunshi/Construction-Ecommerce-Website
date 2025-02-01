@@ -495,6 +495,10 @@ h4{
     font-size       : 20px !important;
     width: 100%;
 }
+#home_blog_news .home_blog_news {
+    gap: 50px !important;
+}
+
 /* =======================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HOME PAGE END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<======================= */
 .all_page_logo {
     margin-top: -260px;
@@ -935,6 +939,9 @@ h4 {
 #get_consuitation .name_get h4 {
     font-size: 30px !important;
     width    : 80%;
+}
+#home_blog_news .home_blog_news {
+    gap: 50px !important;
 }
 
 /* =======================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HOME PAGE END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<======================= */
