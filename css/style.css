@@ -138,7 +138,7 @@ p {
         color: var(--white) !important;
 }
 
-.home_navigation .home_nav_iteam li:hover a {
+.home_navigation .home_nav_iteam li:hover > a {
         color             : var(--brand) !important;
         transition        : 0.4s ease;
         -webkit-transition: 0.4s ease;
@@ -159,6 +159,12 @@ p {
         -moz-transition   : 0.5s ease;
         -ms-transition    : 0.5s ease;
         -o-transition     : 0.5s ease;
+}
+#navigation .container .nav_iteam li .dropdown li a {
+        color: var(--title-color) !important;
+}
+#navigation .container .nav_iteam li .dropdown li:hover a{
+        color:var(--brand) !important;
 }
 
 .home_navigation .home_nav_icon .home_nav_btn:hover {

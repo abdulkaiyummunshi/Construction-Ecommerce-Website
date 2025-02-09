@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Details</title>
     <!-- SLICK SLIDER -->
-    <link rel="stylesheet" href="./asstes/css/slick.min.css">
+    <link rel="stylesheet" href="./css/slick.min.css">
     <!-- FONTAWESOME -->
-    <link rel="stylesheet" href="./asstes/css/font-awesome-all.min.css">
+    <link rel="stylesheet" href="./css/font-awesome-all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- BOOTSTRAP 5.3 -->
-    <link rel="stylesheet" href="./asstes/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- CUSTOM STYLE -->
-    <link rel="stylesheet" href="./asstes/css/style.css">
-    <link rel="stylesheet" href="./asstes/css/main_page.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main_page.css">
     <!-- RESPONSIVE CSS -->
-    <link rel="stylesheet" href="./asstes/css/responsive.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <!-- FONTS STYLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         .nav_section{
-            background-image: url(./asstes/images/about_page/nav/bg.png);
+            background-image: url(./images/about_page/nav/bg.png);
             height: 510px;
             background-position: center;
             background-repeat: no-repeat;
@@ -116,34 +116,24 @@
 <!-- ==================================<<<<<<<<<<NAVIGATION BAR START>>>>>>>>>>================================= -->
 <div class="nav_section">
     <div class="overly_section">
-        <nav id="navigation">
-        <div class="logo">
-             <div class="logo_contains">
-                   <a href="index.html"><img src="asstes/images/about_page/nav/logo.png" alt="This is Logo"></a>
-            <div class="logo_text">
-                <a href="index.html">
-                    <h4>BuildWoll</h4>
-                <p>Construction</p>
-                </a>
+         <nav id="navigation" class="home_navigation">
+        <div class="logo_wrapper_2">
+            <div class="logo">
+                <a href="index.html"><img src="./images/logo/home_page_logo/logo_tow.png" alt=""></a>
             </div>
-             </div>
-            </div>
+        </div>
+        
         <div class="container">
-            
-            
-
-               <ul class="nav_iteam">
+            <ul class="nav_iteam ">
                 <li><a href="home.html">Home + </a></li>
                 <li><a href="service.html">Services + </a>
-                    <ul class="dropdown"> 
+                    <ul class="dropdown">
                         <li><a href="service.html">Services</a></li>
                         <li><a href="services_details.html">Service Details</a></li>
                         <li><a href="#">Comming Soon</a></li>
-                   </ul>
+                    </ul>
                 </li>
-                <li><a href="#">Portfolio + </a></li>
-
-                <li><a href="#">Pages + </a>
+                 <li><a class="list_text" href="#">Pages + </a>
                      <ul class="dropdown"> 
                         <li><a href="home.html">Home</a></li>
                         <li><a href="service.html">Services</a></li>
@@ -156,23 +146,33 @@
                         <li><a href="contact.html">Contact</a></li>
                    </ul>
                 </li>
-
+                <li><a href="project.html">projects + </a>
+                    <ul class="dropdown">
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="project_details.html">Project Details</a></li>
+                        <li><a href="#">Comming Soon</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">News + </a></li>
                 <li><a href="contact.html">Contact + </a></li>
             </ul>
 
-            
-        </div>
-        <ul class="nav_icon">
-                <li class="search"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li class="cart"><a href="#"><i class="fa-solid fa-cart-plus"></i> <span class="count_number">0</span></a></li>
-                <li class="nav_btn"><a href="#">Get a quote<span> <i class="fa-solid fa-right-long"></i> </span></a></li>
-            </ul>
 
-            <div class="mobile_device">
-                <span class="menu_btn"><i class="fa-solid fa-bars"></i></span>
-                </div>
-        </nav>
+        </div>
+
+        <div class="navbar_right_side">
+            <ul class="nav_icon">
+            <li class="search"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li class="cart"><a href="#"><i class="fa-solid fa-cart-plus"></i> <span class="count_number">0</span></a>
+            </li>
+            <li class="common_btn nav_btn"><a href="#">Get a quote<span> <i class="fa-solid fa-right-long"></i> </span></a></li>
+        </ul>
+        </div>
+
+        <div class="mobile_device">
+            <span class="menu_btn"><i class="fa-solid fa-bars"></i></span>
+        </div>
+            </nav>
 <!-- ========OFFCANVAS START============ -->
        <div class="off_canvas">
                 <div class="off_overly">
@@ -233,8 +233,8 @@
         </div>
 
         <div class="left_right_img">
-            <img src="./asstes/images/about_page/nav/one.png" alt="">
-            <img src="./asstes/images/about_page/nav/tow.png" alt="">
+            <img src="./images/about_page/nav/one.png" alt="">
+            <img src="./images/about_page/nav/tow.png" alt="">
         </div>
     </div>
 </div>
@@ -247,7 +247,7 @@
            <div class="left_side col-lg-8">
             <div class="blog_details">
                 <div class="img_part">
-                    <img src="./asstes/images/blog_details/1.png" alt="">
+                    <img src="./images/blog_details/1.png" alt="">
                 </div>
                 <div class="date">
                         <p><span><i class="fa-solid fa-calendar-days"></i></span>&nbsp;  02 April, 2023</p>
@@ -260,7 +260,7 @@
 
             <div class="blog_details_summery">
                 <p>Consider their expertise, track record, client testimonials, and the alignment of their services is with your business goals when selecting a consulting firm. These many companies often serve a diverse range of industries, including finance, healthcare</p>
-                <span><img src="./asstes/images/blog_details/2.png" alt=""></span>
+                <span><img src="./images/blog_details/2.png" alt=""></span>
 
                 <div class="name_summery">
                     <div class="border_summery"></div>
@@ -284,17 +284,17 @@
                <div class="all_images">
                  <div class="col-lg-6">
                     <div class="img">
-                        <img src="./asstes/images/blog_details/hr_function/1.png" alt="">
+                        <img src="./images/blog_details/hr_function/1.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-5">
                     <div class="images">
                        
                         <div class="img_one">
-                            <img src="./asstes/images/blog_details/hr_function/2.png" alt="">
+                            <img src="./images/blog_details/hr_function/2.png" alt="">
                         </div>
                         <div class="img_tow">
-                            <img src="./asstes/images/blog_details/hr_function/3.png" alt="">
+                            <img src="./images/blog_details/hr_function/3.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -330,7 +330,7 @@
                 <!-- one -->
                 <div class="col-lg-6 col-12 child">
                   <div class="text_part">
-                    <img src="./asstes/images/blog_details/related_post/1.png" alt="">
+                    <img src="./images/blog_details/related_post/1.png" alt="">
                     <div class="person">
                         <p><span><i class="fa-regular fa-user"></i></span> By Jonson</p>
                         <p><span><i class="fa-solid fa-calendar-days"></i></span> 12 Sep, 2023</p>
@@ -343,7 +343,7 @@
                 <!-- tow -->
                 <div class="col-lg-6 col-12 child">
                   <div class="text_part">
-                    <img src="./asstes/images/blog_details/related_post/2.png" alt="">
+                    <img src="./images/blog_details/related_post/2.png" alt="">
                     <div class="person">
                         <p><span><i class="fa-regular fa-user"></i></span> By Jonson</p>
                         <p><span><i class="fa-solid fa-calendar-days"></i></span> 12 Sep, 2023</p>
@@ -375,7 +375,7 @@
 
                     <div class="mikel">
                         <h4>HI! I`M MIKEL SMITH</h4>
-                        <img src="./asstes/images/blog_page/right_side_img/1.png" alt="">
+                        <img src="./images/blog_page/right_side_img/1.png" alt="">
                         <p>Consultants aid in managing organizational change by assessing current processes, creating change strategies, providing</p>
                         <a href="#">all my post</a>
                     </div>
@@ -411,7 +411,7 @@
                          <!-- post 1 -->
                         <div class="post">
                             <div class="post_img">
-                                <img src="./asstes/images/blog_page/right_side_img/2.png" alt="">
+                                <img src="./images/blog_page/right_side_img/2.png" alt="">
                             </div>
                             <div class="post_text">
                                 <div class="date">
@@ -426,7 +426,7 @@
                         <!-- post 2 -->
                         <div class="post">
                             <div class="post_img">
-                                <img src="./asstes/images/blog_page/right_side_img/3.png" alt="">
+                                <img src="./images/blog_page/right_side_img/3.png" alt="">
                             </div>
                             <div class="post_text">
                                 <div class="date">
@@ -441,7 +441,7 @@
                         <!-- post 3 -->
                         <div class="post">
                             <div class="post_img">
-                                <img src="./asstes/images/blog_page/right_side_img/4.png" alt="">
+                                <img src="./images/blog_page/right_side_img/4.png" alt="">
                             </div>
                             <div class="post_text">
                                 <div class="date">
@@ -485,12 +485,12 @@
 
     <div class="container home_industry">
 
-            <img src="asstes/images/banner/industry/1.png" alt="">
-            <img src="asstes/images/banner/industry/1.png" alt="">
-            <img src="asstes/images/banner/industry/1.png" alt="">
-            <img src="asstes/images/banner/industry/1.png" alt="">
-            <img src="asstes/images/banner/industry/1.png" alt="">
-            <img src="asstes/images/banner/industry/1.png" alt="">
+            <img src="images/banner/industry/1.png" alt="">
+            <img src="images/banner/industry/1.png" alt="">
+            <img src="images/banner/industry/1.png" alt="">
+            <img src="images/banner/industry/1.png" alt="">
+            <img src="images/banner/industry/1.png" alt="">
+            <img src="images/banner/industry/1.png" alt="">
     </div>
 <!-- ==================================<<<<<<<<<<FOOTER SECTION START>>>>>>>>>>================================= -->
     <footer id="footer_section">
@@ -507,7 +507,7 @@
                     <ul>
                         <li class="d-flex">
                             <a href="index.html">
-                                <img src="./asstes/images/footer/logo.png" alt=""> 
+                                <img src="./images/footer/logo.png" alt=""> 
                             </a>
                             <a href="index.html"><span>
                                 <p>BuildWoll</p>
@@ -556,7 +556,7 @@
                         <li></span><h4>Recent Post</h4></li>
                         <li>
                             <div class="col-lg-4">
-                                <img src="./asstes/images/footer/1.png" alt="">
+                                <img src="./images/footer/1.png" alt="">
                             </div>
                             <div class="col-lg-8 date_text">
                                 <p  class="date"><span><i class="fa-solid fa-calendar-days"></i></span> 20 April, 2023</p>
@@ -566,7 +566,7 @@
 
                         <li>
                             <div class="col-lg-4">
-                                <img src="./asstes/images/footer/2.png" alt="">
+                                <img src="./images/footer/2.png" alt="">
                             </div>
                             <div class="col-lg-8 date_text">
                                 <p  class="date"><span><i class="fa-solid fa-calendar-days"></i></span> 20 April, 2023</p>
@@ -585,12 +585,12 @@
 <!-- ===================================<<<<<<<<<<FOOTER SECTION END>>>>>>>>>>================================== -->  
 
     <!-- JQUERY -->
-    <script src="./asstes/js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
     <!-- SLICK SLIDER -->
-    <script src="./asstes/js/slick.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <!-- BOOTSTRAP -->
-    <script src="./asstes/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <!-- CUSTOM JS -->
-    <script src="./asstes/js/app.js"></script>       
+    <script src="./js/app.js"></script>       
 </body>
 </html>

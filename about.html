@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
         <!-- SLICK SLIDER -->
-    <link rel="stylesheet" href="./asstes/css/slick.min.css">
+    <link rel="stylesheet" href="./css/slick.min.css">
     <!-- FONTAWESOME -->
-    <link rel="stylesheet" href="./asstes/css/font-awesome-all.min.css">
+    <link rel="stylesheet" href="./css/font-awesome-all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- BOOTSTRAP 5.3 -->
-    <link rel="stylesheet" href="./asstes/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- CUSTOM STYLE -->
-    <link rel="stylesheet" href="./asstes/css/style.css">
-    <link rel="stylesheet" href="./asstes/css/main_page.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main_page.css">
     <!-- RESPONSIVE CSS -->
-    <link rel="stylesheet" href="./asstes/css/responsive.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <!-- FONTS STYLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         .nav_section{
-            background-image: url(./asstes/images/about_page/nav/bg.png);
+            background-image: url(./images/about_page/nav/bg.png);
             height: 510px;
             background-position: center;
             background-repeat: no-repeat;
@@ -109,32 +109,24 @@
 <!-- ==================================<<<<<<<<<<NAVIGATION BAR START>>>>>>>>>>================================= -->
 <div class="nav_section">
     <div class="overly_section">
-        <nav id="navigation">
-        <div class="logo">
-             <div class="logo_contains">
-                   <a href="index.html"><img src="asstes/images/about_page/nav/logo.png" alt="This is Logo"></a>
-            <div class="logo_text">
-                <a href="index.html">
-                    <h4>BuildWoll</h4>
-                <p>Construction</p>
-                </a>
+         <nav id="navigation" class="home_navigation">
+        <div class="logo_wrapper_2">
+            <div class="logo">
+                <a href="index.html"><img src="./images/logo/home_page_logo/logo_tow.png" alt=""></a>
             </div>
-             </div>
-            </div>
+        </div>
+        
         <div class="container">
-
-            <ul class="nav_iteam">
+            <ul class="nav_iteam ">
                 <li><a href="home.html">Home + </a></li>
                 <li><a href="service.html">Services + </a>
-                    <ul class="dropdown"> 
+                    <ul class="dropdown">
                         <li><a href="service.html">Services</a></li>
                         <li><a href="services_details.html">Service Details</a></li>
                         <li><a href="#">Comming Soon</a></li>
-                   </ul>
+                    </ul>
                 </li>
-                <li><a href="#">Portfolio + </a></li>
-
-                <li><a href="#">Pages + </a>
+                 <li><a class="list_text" href="#">Pages + </a>
                      <ul class="dropdown"> 
                         <li><a href="home.html">Home</a></li>
                         <li><a href="service.html">Services</a></li>
@@ -147,23 +139,33 @@
                         <li><a href="contact.html">Contact</a></li>
                    </ul>
                 </li>
-
+                <li><a href="project.html">projects + </a>
+                    <ul class="dropdown">
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="project_details.html">Project Details</a></li>
+                        <li><a href="#">Comming Soon</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">News + </a></li>
                 <li><a href="contact.html">Contact + </a></li>
             </ul>
 
-            
-        </div>
-        <ul class="nav_icon">
-                <li class="search"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li class="cart"><a href="#"><i class="fa-solid fa-cart-plus"></i> <span class="count_number">0</span></a></li>
-                <li class="nav_btn"><a href="#">Get a quote<span> <i class="fa-solid fa-right-long"></i> </span></a></li>
-            </ul>
 
-            <div class="mobile_device">
-                <span class="menu_btn"><i class="fa-solid fa-bars"></i></span>
-                </div>
-        </nav>
+        </div>
+
+        <div class="navbar_right_side">
+            <ul class="nav_icon">
+            <li class="search"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li class="cart"><a href="#"><i class="fa-solid fa-cart-plus"></i> <span class="count_number">0</span></a>
+            </li>
+            <li class="common_btn nav_btn"><a href="#">Get a quote<span> <i class="fa-solid fa-right-long"></i> </span></a></li>
+        </ul>
+        </div>
+
+        <div class="mobile_device">
+            <span class="menu_btn"><i class="fa-solid fa-bars"></i></span>
+        </div>
+            </nav>
 <!-- ========OFFCANVAS START============ -->
        <div class="off_canvas">
                 <div class="off_overly">
@@ -224,8 +226,8 @@
         </div>
 
         <div class="left_right_img">
-            <img src="./asstes/images/about_page/nav/one.png" alt="">
-            <img src="./asstes/images/about_page/nav/tow.png" alt="">
+            <img src="./images/about_page/nav/one.png" alt="">
+            <img src="./images/about_page/nav/tow.png" alt="">
         </div>
     </div>
 </div>
@@ -240,7 +242,7 @@
 
           <div class="row">
             <div class="col-lg-6 col-12 part_one">
-            <img src="./asstes/images/home/about/Pic.png" alt="">
+            <img src="./images/home/about/Pic.png" alt="">
           </div>
 
           <div class="col-lg-6 col-12 part_tow">
@@ -259,7 +261,7 @@
                 <div class="btn_profile">
                     <span class="pro_btn col-lg-6 col-md-6 col-12"><a href="#">Read more  <i class="fa-solid fa-arrow-right"></i> </a></span>
                     <div class="profile col-lg-6 col-md-6 col-12">
-                        <span><img src="./asstes/images/home/about/profile.jpg" alt=""></span>
+                        <span><img src="./images/home/about/profile.jpg" alt=""></span>
                         <div class="name_category">
                             <p>Brooklyn Simmons</p>
                             <p>Founder CEO</p>
@@ -307,10 +309,10 @@
 
         <div class="home_srv_img">
             <div class="img_one">
-                <img src="./asstes/images/home/service/1.png" alt="">
+                <img src="./images/home/service/1.png" alt="">
             </div>
             <div class="img_tow">
-                <img src="./asstes/images/home/service/2.png" alt="">
+                <img src="./images/home/service/2.png" alt="">
                 <span class="icon_one">
                     <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M55.7597 44.0625L58.995 35.9738L57.2541 35.2772L53.7403 44.0625H53.4375V32.8125H51.5625V17.8125H47.8125V14.0625H45.9375V17.8125H44.0625V12.1875H42.1875V17.8125H40.3125V14.0625H38.4375V17.8125H34.6875V29.0625H30.9375V33.8709C28.7182 31.139 25.6906 29.1803 22.2891 28.2759L21.8634 27C22.535 26.8163 23.1572 26.4854 23.685 26.0313C24.2128 25.5773 24.633 25.0115 24.915 24.375H25.3125C27.3806 24.375 29.0625 22.6931 29.0625 20.625V15.9375C30.0966 15.9375 30.9375 15.0966 30.9375 14.0625V12.1875C30.9375 11.1534 30.0966 10.3125 29.0625 10.3125H28.8994C28.0022 4.9125 23.3841 0.9375 17.8125 0.9375C12.2409 0.9375 7.62281 4.9125 6.72562 10.3125H6.5625C5.52844 10.3125 4.6875 11.1534 4.6875 12.1875V14.0625C4.6875 15.0966 5.52844 15.9375 6.5625 15.9375V20.625C6.5625 22.6931 8.24437 24.375 10.3125 24.375H10.71C10.992 25.0116 11.4121 25.5774 11.9399 26.0314C12.4677 26.4855 13.09 26.8163 13.7616 27L13.3359 28.2759C6.00938 30.2081 0.9375 36.7575 0.9375 44.3831V45C0.9375 48.9975 3.22875 52.4634 6.5625 54.1744V59.0625H34.6875V51.5625H37.5947C38.0306 53.6991 39.9234 55.3125 42.1875 55.3125C44.4516 55.3125 46.3444 53.6991 46.7803 51.5625H51.4856C53.3022 51.5673 55.0612 50.9251 56.4473 49.7509C57.8335 48.5767 58.7563 46.9474 59.0503 45.1547L59.2322 44.0625H55.7597ZM44.0625 44.0625V34.6875H51.5625V44.0625H44.0625ZM36.5625 19.6875H49.6875V32.8125H44.0625V29.0625H36.5625V19.6875ZM42.1875 30.9375V44.0625H32.8125V30.9375H42.1875ZM30.9375 37.1962V44.0625H30.6347L27.12 35.2762L25.3791 35.9728L28.6153 44.0625H25.1437L25.3256 45.1547C25.5646 46.595 26.2106 47.9369 27.1875 49.0219V57.1875H22.5V55.3125C24.0506 55.3125 25.3125 54.0506 25.3125 52.5C25.3125 50.9494 24.0506 49.6875 22.5 49.6875V30.3066C26.0872 31.4449 29.105 33.909 30.9375 37.1962ZM19.9491 27.1875L20.5275 28.9237L17.8125 32.9972L15.0966 28.9237L15.6759 27.1875H19.9491ZM20.625 36.7022L18.9731 34.6369L20.625 32.1591V36.7022ZM15 36.7022V32.1591L16.6519 34.6369L15 36.7022ZM15 39.7031L17.8125 36.1875L20.625 39.7031V47.9775C20.3242 47.8695 20.0071 47.8136 19.6875 47.8125H18.5897C17.8387 47.8125 17.1319 48.105 16.6003 48.6366L15.6384 49.5984L15 49.4559V39.7031ZM16.875 51.0131L17.9259 49.9622C18.013 49.8748 18.1164 49.8056 18.2303 49.7585C18.3443 49.7113 18.4664 49.6872 18.5897 49.6875H19.6875C20.2041 49.6875 20.625 50.1084 20.625 50.625V51.5625H22.5C23.0166 51.5625 23.4375 51.9834 23.4375 52.5C23.4375 53.0166 23.0166 53.4375 22.5 53.4375H16.875V51.0131ZM20.625 55.3125V57.1875H15V55.3125H20.625ZM25.3125 22.5V18.75C26.3466 18.75 27.1875 19.5909 27.1875 20.625C27.1875 21.6591 26.3466 22.5 25.3125 22.5ZM27.1875 17.3962C26.62 17.0588 25.9727 16.8789 25.3125 16.875V15.9375H27.1875V17.3962ZM26.9962 10.3125H20.625V3.24187C22.2257 3.73676 23.6628 4.65512 24.7843 5.89978C25.9059 7.14444 26.6701 8.66912 26.9962 10.3125ZM18.75 2.85938V10.3125H16.875V2.85938C17.1834 2.82937 17.4956 2.8125 17.8125 2.8125C18.1294 2.8125 18.4416 2.82937 18.75 2.85938ZM15 3.24187V10.3125H8.62875C8.95485 8.66912 9.7191 7.14444 10.8407 5.89978C11.9622 4.65512 13.3993 3.73676 15 3.24187ZM6.56156 12.1875H29.0625V14.0625H6.5625L6.56156 12.1875ZM10.3125 15.9375V16.875C9.62625 16.875 8.99156 17.0737 8.4375 17.3962V15.9375H10.3125ZM8.4375 20.625C8.4375 19.5909 9.27844 18.75 10.3125 18.75V22.5C9.27844 22.5 8.4375 21.6591 8.4375 20.625ZM12.1875 22.5V15.9375H23.4375V22.5C23.4375 24.0506 22.1756 25.3125 20.625 25.3125H15C13.4494 25.3125 12.1875 24.0506 12.1875 22.5ZM2.8125 45V44.3831C2.8125 37.8581 6.9975 32.2256 13.125 30.2934V49.0406L12.1078 48.8147C11.0643 48.5877 10.1304 48.0092 9.46229 47.1761C8.79419 46.343 8.43242 45.3057 8.4375 44.2378V40.3125H6.5625V44.2378C6.55529 45.7327 7.06176 47.1847 7.99715 48.3509C8.93254 49.517 10.2401 50.3264 11.7009 50.6437L15 51.3769V53.4375H11.25C6.59812 53.4375 2.8125 49.6519 2.8125 45ZM8.4375 54.9131C9.33281 55.1672 10.2741 55.3125 11.25 55.3125H13.125V57.1875H8.4375V54.9131ZM29.0625 57.1875V50.5444C30.2045 51.1993 31.496 51.5489 32.8125 51.5597V57.1875H29.0625ZM42.1875 53.4375C40.6369 53.4375 39.375 52.1756 39.375 50.625C39.375 50.1084 39.7959 49.6875 40.3125 49.6875H44.0625C44.5791 49.6875 45 50.1084 45 50.625C45 52.1756 43.7381 53.4375 42.1875 53.4375ZM51.4847 49.6875H46.7016C46.5088 49.1407 46.1516 48.667 45.679 48.3313C45.2063 47.9956 44.6413 47.8144 44.0616 47.8125H40.3116C39.7318 47.8144 39.1668 47.9956 38.6942 48.3313C38.2215 48.667 37.8643 49.1407 37.6716 49.6875H32.8884C31.7097 49.6907 30.5583 49.3331 29.5888 48.6628C28.6193 47.9924 27.8782 47.0414 27.465 45.9375H56.9062C56.4939 47.0416 55.7532 47.9928 54.7839 48.6632C53.8146 49.3337 52.6632 49.6911 51.4847 49.6875Z" fill="#FF5E14" />
@@ -323,10 +325,10 @@
                 </div>
             </div>
             <div class="img_three">
-                <img src="./asstes/images/home/service/3.png" alt="">
+                <img src="./images/home/service/3.png" alt="">
             </div>
             <div class="img_four">
-                <img src="./asstes/images/home/service/4.png" alt="">
+                <img src="./images/home/service/4.png" alt="">
                  <span class="icon_tow">
                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M53.0901 42.3425C52.9292 42.2758 52.7521 42.2583 52.5813 42.2923C52.4104 42.3262 52.2535 42.4101 52.1303 42.5333L42.5062 52.1574C42.3829 52.2806 42.299 52.4375 42.265 52.6084C42.231 52.7793 42.2484 52.9564 42.3151 53.1173C42.3818 53.2783 42.4947 53.4158 42.6396 53.5126C42.7845 53.6093 42.9548 53.6609 43.129 53.6608H52.7532C52.8688 53.6609 52.9834 53.6381 53.0902 53.5938C53.1971 53.5496 53.2942 53.4847 53.3759 53.4029C53.4577 53.3211 53.5226 53.2241 53.5668 53.1172C53.6111 53.0104 53.6339 52.8958 53.6338 52.7802V43.156C53.6338 42.9818 53.5821 42.8116 53.4853 42.6668C53.3885 42.522 53.251 42.4092 53.0901 42.3425ZM45.2548 51.8996L51.8723 45.2821V51.8996H45.2548Z" fill="#FF5E14" />
@@ -341,10 +343,10 @@
                 </div>
             </div>
             <div class="img_five">
-                <img src="./asstes/images/home/service/5.png" alt="">
+                <img src="./images/home/service/5.png" alt="">
             </div>
             <div class="img_six">
-                <img src="./asstes/images/home/service/6.png" alt="">
+                <img src="./images/home/service/6.png" alt="">
                  <span class="icon_one">
                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M43.9533 16.6325C43.7355 16.4145 43.4331 16.2891 43.1249 16.2891C42.8167 16.2891 42.5144 16.4145 42.2964 16.6325C42.0773 16.8526 41.9539 17.1504 41.9531 17.461C41.9531 17.7692 42.0783 18.0715 42.2964 18.2895C42.5145 18.5075 42.8167 18.6329 43.1249 18.6329C43.4331 18.6329 43.7355 18.5075 43.9533 18.2895C44.1713 18.0715 44.2968 17.7692 44.2968 17.461C44.2968 17.1528 44.1714 16.8504 43.9533 16.6325ZM17.5781 33.0469H8.20312C7.55601 33.0469 7.03125 33.5716 7.03125 34.2188V43.5938C7.03125 44.241 7.55601 44.7656 8.20312 44.7656H17.5781C18.2252 44.7656 18.75 44.241 18.75 43.5938V34.2188C18.75 33.5716 18.2253 33.0469 17.5781 33.0469ZM16.4062 42.4219H9.375V35.3906H16.4062V42.4219ZM59.2765 24.5814C59.0624 24.4927 58.8268 24.4695 58.5994 24.5147C58.3721 24.5599 58.1633 24.6715 57.9994 24.8354L46.0583 36.7765L46.0577 36.7771C46.0575 36.7773 46.0573 36.7775 46.0572 36.7777L32.1372 50.6977L32.1366 50.6982L32.136 50.6988L24.8354 57.9995C24.6715 58.1634 24.5599 58.3722 24.5147 58.5995C24.4695 58.8268 24.4927 59.0624 24.5814 59.2766C24.6701 59.4907 24.8203 59.6737 25.013 59.8025C25.2057 59.9312 25.4323 60 25.664 60H58.828C59.4751 60 59.9999 59.4753 59.9999 58.8281V25.6641C59.9999 25.4323 59.9312 25.2058 59.8024 25.013C59.6737 24.8203 59.4906 24.6701 59.2765 24.5814ZM57.6562 57.6562H28.4933L32.9653 53.1842L34.0839 54.3029C34.3128 54.5318 34.6127 54.6462 34.9126 54.6462C35.2124 54.6462 35.5123 54.5318 35.7412 54.3029C36.1988 53.8453 36.1988 53.1033 35.7412 52.6455L34.6225 51.5269L37.6056 48.5437L38.7242 49.6623C38.9531 49.8912 39.2529 50.0055 39.5528 50.0055C39.8527 50.0055 40.1526 49.8911 40.3815 49.6623C40.8391 49.2047 40.8391 48.4627 40.3815 48.005L39.2628 46.8864L42.2459 43.9032L43.3646 45.0219C43.5934 45.2508 43.8933 45.3652 44.1932 45.3652C44.4931 45.3652 44.793 45.2508 45.0218 45.0219C45.4795 44.5643 45.4795 43.8223 45.0218 43.3645L43.9032 42.2459L46.8862 39.2629L48.0048 40.3815C48.2337 40.6104 48.5336 40.7248 48.8335 40.7248C49.1334 40.7248 49.4332 40.6104 49.6621 40.3815C50.1197 39.9239 50.1197 39.1819 49.6621 38.7242L48.5434 37.6055L51.5266 34.6224L52.6451 35.7409C52.7538 35.8499 52.883 35.9363 53.0252 35.9952C53.1674 36.0541 53.3198 36.0844 53.4737 36.0842C53.6277 36.0843 53.7801 36.0541 53.9223 35.9952C54.0645 35.9363 54.1937 35.8499 54.3024 35.7409C54.76 35.2833 54.76 34.5413 54.3024 34.0837L53.1837 32.965L57.6562 28.4932V57.6562Z" fill="#FF5E14" />
@@ -382,11 +384,11 @@
 
                 <div class="profile_text">
                     <div class="people">
-                        <img src="./asstes/images/home/company_archives/1.png" alt="">
-                        <img src="./asstes/images/home/company_archives/2.png" alt="">
-                        <img src="./asstes/images/home/company_archives/3.png" alt="">
-                        <img src="./asstes/images/home/company_archives/4.png" alt="">
-                        <img src="./asstes/images/home/company_archives/5.png" alt="">
+                        <img src="./images/home/company_archives/1.png" alt="">
+                        <img src="./images/home/company_archives/2.png" alt="">
+                        <img src="./images/home/company_archives/3.png" alt="">
+                        <img src="./images/home/company_archives/4.png" alt="">
+                        <img src="./images/home/company_archives/5.png" alt="">
                     </div>
 
                     <div class="text">
@@ -446,7 +448,7 @@
             <div class="second_part row">
                 <div class="team_parent">
                     <div class="col-lg-4 child">
-                    <img src="./asstes/images/home/great_team/1.png" alt="">
+                    <img src="./images/home/great_team/1.png" alt="">
                     <h4>Savannah Nguyen</h4>
                     <p>Senior Engineer</p>
                     <ul class="social_media_icon">
@@ -460,7 +462,7 @@
                 </div>
                  <div class="team_parent">
                 <div class="col-lg-4 child">
-                    <img src="./asstes/images/home/great_team/2.png" alt="">
+                    <img src="./images/home/great_team/2.png" alt="">
                     <h4> Darlene Robertson</h4>
                     <p>Jr. Engineer</p>
                     <ul class="social_media_icon">
@@ -474,7 +476,7 @@
                 </div>
                  <div class="team_parent">
                 <div class="col-lg-4 child">
-                    <img src="./asstes/images/home/great_team/3.png" alt="">
+                    <img src="./images/home/great_team/3.png" alt="">
                     <h4>Marvin McKinney</h4>
                     <p>Asst. Engineer</p>
                     <ul class="social_media_icon">
@@ -493,12 +495,12 @@
     
     <div class="home_industry">
 
-            <img src="asstes/images/banner/industry/1.png" alt="">
-            <img src="asstes/images/banner/industry/1.png" alt="">
-            <img src="asstes/images/banner/industry/1.png" alt="">
-            <img src="asstes/images/banner/industry/1.png" alt="">
-            <img src="asstes/images/banner/industry/1.png" alt="">
-            <img src="asstes/images/banner/industry/1.png" alt="">
+            <img src="images/banner/industry/1.png" alt="">
+            <img src="images/banner/industry/1.png" alt="">
+            <img src="images/banner/industry/1.png" alt="">
+            <img src="images/banner/industry/1.png" alt="">
+            <img src="images/banner/industry/1.png" alt="">
+            <img src="images/banner/industry/1.png" alt="">
     </div>
 
     
@@ -521,7 +523,7 @@
                     <ul>
                         <li class="d-flex">
                             <a href="#">
-                                <img src="./asstes/images/footer/logo.png" alt=""> 
+                                <img src="./images/footer/logo.png" alt=""> 
                             </a>
                             <a href="#"><span>
                                 <p>BuildWoll</p>
@@ -570,7 +572,7 @@
                         <li></span><h4>Recent Post</h4></li>
                         <li>
                             <div class="col-lg-4">
-                                <img src="./asstes/images/footer/1.png" alt="">
+                                <img src="./images/footer/1.png" alt="">
                             </div>
                             <div class="col-lg-8 date_text">
                                 <p  class="date"><span><i class="fa-solid fa-calendar-days"></i></span> 20 April, 2023</p>
@@ -580,7 +582,7 @@
 
                         <li>
                             <div class="col-lg-4">
-                                <img src="./asstes/images/footer/2.png" alt="">
+                                <img src="./images/footer/2.png" alt="">
                             </div>
                             <div class="col-lg-8 date_text">
                                 <p  class="date"><span><i class="fa-solid fa-calendar-days"></i></span> 20 April, 2023</p>
@@ -600,13 +602,13 @@
 
 
        <!-- JQUERY -->
-    <script src="./asstes/js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
     <!-- SLICK SLIDER -->
-    <script src="./asstes/js/slick.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <!-- BOOTSTRAP -->
-    <script src="./asstes/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <!-- CUSTOM JS -->
-    <script src="./asstes/js/app.js"></script>   
-    <script src="./asstes/js/pricing.js"></script>  
+    <script src="./js/app.js"></script>   
+    <script src="./js/pricing.js"></script>  
 </body>
 </html>

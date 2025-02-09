@@ -1,4 +1,7 @@
 /*common css start*/
+.color_white {
+  color: white !important; }
+
 .d-flex {
   display: flex;
   flex-direction: row;
@@ -133,6 +136,24 @@
         padding: 0px 37px 0px 0px;
         max-width: 100%;
         height: auto; }
+  #navigation .logo_wrapper_2 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center; }
+    #navigation .logo_wrapper_2 .logo {
+      width: 100%;
+      height: auto !important;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      #navigation .logo_wrapper_2 .logo img {
+        padding: 0px 37px 0px 0px;
+        max-width: 100%;
+        height: auto; }
   #navigation .container {
     width: 60%;
     height: 100%;
@@ -198,7 +219,7 @@
             border-bottom: 1px solid #ced4da; }
             #navigation .container .nav_iteam li .dropdown li::before {
               content: "";
-              width: 3%;
+              width: 0%;
               height: 100%;
               background-color: #e9ecef;
               position: absolute;

@@ -1,6 +1,9 @@
 @import "variables";
 @import "mixin";
 /*common css start*/
+.color_white{
+  color: white !important;
+}
 .d-flex{
   @include flex(row, center, center)
 }
@@ -114,7 +117,6 @@
 /*common css end*/
 // ==================== Navigation Bar Start ====================
 #navigation {
-  // overflow: hidden;
   background: $white;
   height: 115px;
   @include flex(row, space-between, center);
@@ -128,7 +130,21 @@
     .logo{
       width: 100%;
       height: auto !important;
-      // background-color: red;
+      @include flex(row, center, center);
+      img{
+      padding: 0px 37px 0px 0px;
+      max-width: 100%;
+      height: auto;
+    }
+    }
+  }
+  .logo_wrapper_2{
+    width: 20%;
+    height: 100%;
+    @include flex(row, flex-end, center);
+    .logo{
+      width: 100%;
+      height: auto !important;
       @include flex(row, center, center);
       img{
       padding: 0px 37px 0px 0px;
@@ -140,6 +156,9 @@
 
   // .home_logo {
   //   clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  //   background-color: $brand-color;
+  //   height: 100% !important;
+  //   width:20%;
   // }
 
   // .logo_contains {
@@ -233,7 +252,7 @@
 
             &::before{
               content: "";
-              width: 3%;
+              width: 0%;
               height: 100%;
               background-color: #e9ecef ;
               position: absolute;
