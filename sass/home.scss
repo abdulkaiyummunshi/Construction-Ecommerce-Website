@@ -1,6 +1,117 @@
 @import "variables";
 @import "mixin";
+/*common css start*/
+.d-flex{
+  @include flex(row, center, center)
+}
+.common_btn{
+  cursor: pointer !important;
+  border: none;
+  background-color: #ff5e14;
+  @include border-radius(5px);
+  a{
+  text-decoration: none;
+  padding: 15px 20px;
+   color: #fff !important;
+  display: inline-block;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase; 
+  span{
+    padding-left: 5px;
+  }
+  }
+  &:hover {
+    background-color: #ddd;
+    a{
+      color: $brand-color !important;
+    }
+  }
+}
 
+
+ .heading_part{
+          position: relative;
+          @include flex(column, center, flex-start);
+          gap: 20px;
+          h6{
+            font-family: $font-primary;
+                font-weight: 600;
+                line-height: 139%;
+                text-transform: uppercase;
+                color: $brand-color;
+                margin-left: 10px;
+                position: relative;
+                display: inline;
+                margin-left: 40px;
+                &::before{
+                  content: "";
+                  width: 30px;
+                  height: 2px;
+                  background-color: $brand-color;
+                  position: absolute;
+                  top:5px;
+                  left: -40px !important;
+
+                }
+                span::before{
+                  content: "";
+                  width: 20px;
+                  height: 2px;
+                  background-color: $brand-color;
+                  position: absolute ;
+                  bottom: 6px ;
+                  left: -30px;                
+                }
+                &::after{
+                  content: "";
+                  width: 30px;
+                  height: 2px;
+                  background-color: $brand-color;
+                  position: absolute;
+                  top:5px;
+                  right: -40px !important;
+
+                }
+                span::after{
+                  content: "";
+                  width: 20px;
+                  height: 2px;
+                  background-color: $brand-color;
+                  position: absolute ;
+                  bottom: 6px ;
+                  right: -30px;                
+                }
+                
+          }
+          h2 {
+            font-family: $font-primary;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 121%;
+            color: $title-color;
+            width: 100%;
+        }
+        p{
+          font-family: $font-secondary;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 162%;
+            color: $body-color;
+        }
+        }
+  .heading_part_h2{
+    color: $white !important;
+  }
+  .heading_part_center{
+  width: 100%;
+  @include flex(column, center, center);
+  margin-top: 40px;
+  text-align: center;
+
+}
+/*common css end*/
 // ==================== Navigation Bar Start ====================
 #navigation {
   background: $white;
@@ -8,62 +119,83 @@
   @include flex(row, space-between, center);
   position: relative;
 
-  .logo {
+  .logo_wrapper{
     width: 20%;
     height: 100%;
-    padding-left: 20px;
     background-color: $brand-color;
     @include flex(row, flex-end, center);
-    padding-right: 40px;
-    margin-left: -10px;
-  }
-
-  .home_logo {
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
-  }
-
-  .logo_contains {
-    @include flex(row, flex-start, center);
-  }
-
-  .logo_contains img {
-    width: 70px;
-    height: auto;
-  }
-
-  .logo_text {
-    @include flex(column, center, center);
-    margin-left: 10px;
-
-    h4 {
-      font-family: $font-primary;
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 142%;
-      text-transform: uppercase;
-      color: $white;
-      margin-top: -10px;
+    .logo{
+      width: 100%;
+      height: auto !important;
+      // background-color: red;
+      @include flex(row, center, center);
+      img{
+      padding: 0px 37px 0px 0px;
+      max-width: 100%;
+      height: auto;
     }
-
-    p {
-      font-family: $font-secondary;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 200%;
-      text-transform: uppercase;
-      color: $title-color;
     }
   }
+
+  // .home_logo {
+  //   clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  // }
+
+  // .logo_contains {
+  //   @include flex(row, flex-start, center);
+  // }
+
+  // .logo_contains img {
+  //   width: 70px;
+  //   height: auto;
+  // }
+
+  // .logo_text {
+  //   @include flex(column, center, center);
+  //   margin-left: 10px;
+
+  //   h4 {
+  //     font-family: $font-primary;
+  //     font-weight: 600;
+  //     font-size: 24px;
+  //     line-height: 142%;
+  //     text-transform: uppercase;
+  //     color: $white;
+  //     margin-top: -10px;
+  //   }
+
+  //   p {
+  //     font-family: $font-secondary;
+  //     font-weight: 400;
+  //     font-size: 12px;
+  //     line-height: 200%;
+  //     text-transform: uppercase;
+  //     color: $title-color;
+  //   }
+  // }
 
   .container {
     width: 60%;
-    margin: 0 10px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    // margin: 0 10px;
+    // background-color: #e63a27;
+    @include flex(row, center, center);
     .nav_iteam {
-      @include flex(row, center, center);
-      height: 100%;
-      li {
+      @include flex(row, space-between, center);
+      width: 90%;
+      // background-color: green !important;
+      height: 100% !important;
+      // gap: 3%;
+      padding: 0;
+      margin: 0;
+      li  {
         margin: 0 10px;
         position: relative;
+        &:hover > a{
+          color: $brand-color;
+        }
 
         a {
           font-family: $font-secondary;
@@ -72,38 +204,53 @@
           line-height: 162%;
           text-transform: uppercase;
           color: $title-color;
-
-          &:hover {
-            color: $brand-color;
-          }
         }
 
         .dropdown {
-           @include flex(column, flex-start, flex-start);
+          @include flex(column,flex-start,flex-start);
           position: absolute;
-          top: 0;
+          top: 50px;
           left: 50%;
           transform: translateX(-50%);
-          width: 180px;
-          background-color: $border-color;
+          width: 200px;
+          background-color: #f8f9fa;
           visibility: hidden;
           opacity: 0;
-          padding: 30px;
-          border-radius: 10px;
+          @include border-radius(5px);
           z-index: 20;
           padding: 0 !important;
           margin: 0 !important;
           @include transition(0.5s);
-
-          li {
+          @include flex(column, center, center);
+          li{
             width: 100%;
-            margin-left: -5px;
+            margin: 0px;
             @include transition(0.4s);
+            padding: 5px 0px;
+            position: relative;
+            border-bottom: 1px solid #ced4da ;
+
+            &::before{
+              content: "";
+              width: 3%;
+              height: 100%;
+              background-color: #e9ecef ;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              z-index: -1;
+            
+            }
+            &:hover::before{
+              width: 100%;
+              @include transition(0.7s)
+            }
             a {
               font-family: $font-secondary;
               font-size: 16px;
               padding: 0px 15px;
               display: block;
+              // z-index: 100;
             }
           }
         }
@@ -112,21 +259,21 @@
           visibility: visible;
           opacity: 1;
           top: 70px;
-          .dropdown li:hover a{
-            color: $brand-color !important;
-          }
         }
       }
     }
   }
 
-  .nav_icon {
-    @include flex(row, flex-start, center);
+  .navbar_right_side {
     width: 20%;
+    .nav_icon{
+    @include flex(row, space-between, center);
+    width: 80%;
     height: 100%;
-
+    margin: 0px;
+    gap: 20px;
+      
     li {
-      margin: 0 10px;
       a {
         color: $title-color;
       }
@@ -148,32 +295,12 @@
       }
     }
 
-    .nav_btn {
-      border-radius: 5px;
-      background-color: $brand-color;
-      padding: 10px 15px;
-      text-align: center;
-      margin-left: 20px;
-      cursor: pointer;
-      @include transition(0.5s);
-
-      a {
-        font-family: $font-secondary;
-        font-weight: 700;
-        font-size: 12px;
-        text-transform: uppercase;
-        color: $white;
-        span{
-          font-size: 10px;
-        }
-      }
-
-      &:hover{
-        background-color: $title-color;
-      }
+    .nav_btn a {
+      font-size: 12px !important;
     }
     .cart{
       position: relative;
+    }
     }
   }
   .mobile_device{
@@ -328,9 +455,10 @@
 /*--------------SEARCH BAR START -------------- */
 #search_bar {
   width: 100%;
-  height: 100vh;
-  background-color: rgba(57, 63, 72, 0.7);
-  position: absolute;
+  height: 100vh !important;
+  background-color: #1e1e1e ;
+  //background-color: rgba(57, 63, 72, 0.7);
+  position: fixed;
   top: 0;
   left: 0;
   @include flex(center, center, center);
@@ -384,29 +512,6 @@
 
 /* ====================NAVIGATION BAR END====================== */
 
-/* ==================== Variables ==================== */
-// $brand-color: #ff5e14;
-// $white: #fff;
-// $body-color: #4d5765;
-// $title-color: #0e121d;
-// $smoke-1: #f7f4ed;
-// $border-color: #e3e2e2;
-// $smoke-2: #eff3fa;
-// $other-dark: #0a0a18;
-
-/* ==================== Mixins ==================== */
-// @mixin flex($direction: row, $justify: flex-start, $align: stretch) {
-//   display: flex;
-//   flex-direction: $direction;
-//   justify-content: $justify;
-//   align-items: $align;
-// }
-
-// @mixin transition($time: 0.5s) {
-//   transition: all $time ease;
-// }
-
-
 
 /* ==================== Banner Section ==================== */
 #banner {
@@ -415,7 +520,7 @@
   @include background_img(no-repeat, center);
   background-size: cover;
   z-index: 1;
-  .tk{
+  .banner_sidebar_text{
     display: flex;
   }
   
@@ -644,54 +749,24 @@ button{
         height: 100%;
         padding: 50px 0;
         margin-top: 20px;
-
         .about_image {
             height: 100%;
             width: 100%;
-
-            img {
-                width: 100%;
-                height: 100%;
+            
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            padding:0px 20px !important;
                 object-fit: contain;
             }
-        }
     }
 
     .ab_tow {
         height: 100%;
-        @include flex(column, center, center);
+        @include flex(column, center, flex-start);
         gap: 20px;
-
-        .about_name {
-          @include flex(row, flex-start, flex-start);
-            width: 100%;
-
-            p {
-                font-family: $font-primary;
-                font-weight: 600;
-                line-height: 139%;
-                text-transform: uppercase;
-                color: $brand-color;
-                margin-left: 10px;
-            }
-        }
-
-        h2 {
-            font-family: $font-primary;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 121%;
-            color: $title-color;
-            width: 100%;
-        }
-
-        .about_para {
-            font-family: $font-secondary;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 162%;
-            color: $body-color;
-        }
+        text-align: left;
 
         .rantal_interior {
             display: flex;
@@ -847,11 +922,7 @@ button{
   gap: 20px;
 }
 
-#service .srv_one {
-  width: 100%;
-  @include flex(column, center, center);
-  margin-top: 40px;
-}
+
 
 #service .srv_one .srv_name {
   display: flex;
@@ -998,6 +1069,7 @@ button{
 #great_team {
     position: relative;
     padding-bottom: 150px;
+    margin-top: 100px;
 
     img {
         position: absolute;
@@ -1005,50 +1077,9 @@ button{
         bottom: -55px;
     }
 
-    .great_name {
-        margin-top: 130px;
-        width: 50%;
-        height: 150px;
-        justify-content: flex-end;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 50px;
-
-        p {
-            font-family: $font-primary;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 139%;
-            text-transform: uppercase;
-            color: $brand-color;
-        }
-
-        h4 {
-            font-family: $font-primary;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 121%;
-            color: var(--title-color);
-        }
-
-        .border_top {
-            width: 30px;
-            height: 2px;
-            background-color: $brand-color;
-            margin-top: 5px;
-        }
-
-        .border_bottom {
-            width: 20px;
-            height: 2px;
-            background-color: $brand-color;
-            margin-top: 10px;
-        }
-    }
-
-    .parent {
-        height: 659px;
+    .team_slider {
         margin-bottom: 100px !important;
+        margin-top: 50px;
 
         .child {
             border-radius: 5px;
@@ -1091,7 +1122,7 @@ button{
 
                 &:hover {
                     color: $white;
-                    background-color: $brand-color;
+                    background-color: $brand-color !important;
                     transition: 0.5s ease-in-out;
                 }
             }
@@ -1130,7 +1161,7 @@ button{
         .left-arrow,
         .right-arrow {
             position: absolute;
-            top: -120px;
+            top: -100px;
             width: 60px;
             height: 60px;
             background-color: transparent;
@@ -1331,32 +1362,11 @@ button{
 #portfolio {
   margin-top: 100px;
 
-  .one {
-    @include flex(column, center, center);
-    height: 138px;
-    text-align: center;
-
-    .port {
-      @include flex(0, center, center);
-
-      .port_border {
-        @include flex(column, 0, flex-end)
-      }
-    }
-
-    h4 {
-      font-family: $font-primary;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 121%;
-      color: $title-color;
-    }
-  }
-
   .tow {
     @include flex(row, space-between, center);
     margin: 0;
     padding: 0;
+    margin-top: 50px;
 
     .card_one {
       @include border-radius(10px);
@@ -1483,9 +1493,13 @@ button{
 
         &:hover {
           background-color: $brand-color;
+          
           border-right: none;
           @include border-radius(5px);
           @include transition(0.4s);
+          a{
+            color: $white;
+          }
         }
 
         a {
@@ -1795,30 +1809,33 @@ button{
     height: auto;
     margin-top: 50px;
 
-    .one {
-      @include flex(column, center, center);
-        text-align: center;
-        gap: 30px;
+    // .one {
+    //   @include flex(column, center, center);
+    //     text-align: center;
+    //     gap: 30px;
 
-        .port {
-            text-align: center;
-            @include flex(0, center, center);
-        }
+    //     .port {
+    //         text-align: center;
+    //         @include flex(0, center, center);
+    //     }
 
-        h4 {
-            font-family: $font-primary;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 121%;
-            text-align: center;
-            color: $title-color;
-            margin-bottom: 20px;
-        }
-    }
+    //     h4 {
+    //         font-family: $font-primary;
+    //         font-weight: 700;
+    //         font-size: 48px;
+    //         line-height: 121%;
+    //         text-align: center;
+    //         color: $title-color;
+    //         margin-bottom: 20px;
+    //     }
+    // }
 
     .tow {
+      margin-top: 50px;
         .child {
             height: 298px;
+            gap: 10px;
+            padding: 10px;
             @include flex(column, 0, center);
 
             &:hover {
@@ -1954,8 +1971,7 @@ button{
 
       .read_more_btn {
         margin-top: 60px;
-        display: flex;
-        justify-content: space-between;
+        @include flex(row, space-between, center);
         padding: 0 20px;
 
         .read a {
@@ -1964,6 +1980,7 @@ button{
           font-size: 16px;
           text-transform: uppercase;
           color: $title-color;
+
         }
 
         .right_arrow {

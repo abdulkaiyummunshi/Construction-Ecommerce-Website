@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.section-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between lines and text */
+  font-size: 20px;
+  font-weight: bold;
+  color: orange;
+  text-transform: uppercase;
+}
+
+.section-title span {
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  background-color: orange;
+}
+
+/* First two lines on the left */
+.section-title span:nth-child(1) { margin-right: -30px; }
+.section-title span:nth-child(2) { margin-right: -10px; }
+
+/* Last two lines on the right */
+.section-title span:nth-child(3) { margin-left: -10px; }
+.section-title span:nth-child(4) { margin-left: -30px; }
+
+    </style>
+</head>
+<body>
+    <h2 class="section-title">
+  <span></span><span></span> SERVICES <span></span><span></span>
+</h2>
+
+
+</body>
+</html>
