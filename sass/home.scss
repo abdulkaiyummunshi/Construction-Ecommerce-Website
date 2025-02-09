@@ -735,6 +735,7 @@ button{
 /* ====================ABOUT US START====================== */
 
 #about_us {
+  margin: 100px 0px;
     .about_contains {
         flex-wrap: wrap;
         @include flex(row, center, center);
@@ -1070,6 +1071,7 @@ button{
     position: relative;
     padding-bottom: 150px;
     margin-top: 100px;
+    // margin-bottom: 100px !important;
 
     img {
         position: absolute;

@@ -606,149 +606,151 @@
     left: 0px; }
 
 /* ====================ABOUT US START====================== */
-#about_us .about_contains {
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  gap: 20px; }
-#about_us .ab_one {
-  width: calc(50% - 20px);
-  box-sizing: border-box;
-  height: 100%;
-  padding: 50px 0;
-  margin-top: 20px; }
-  #about_us .ab_one .about_image {
-    height: 100%;
-    width: 100%; }
-  #about_us .ab_one img {
-    width: 100%;
-    height: 100%;
-    padding: 0px 20px !important;
-    object-fit: contain; }
-#about_us .ab_tow {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-  text-align: left; }
-  #about_us .ab_tow .rantal_interior {
-    display: flex;
+#about_us {
+  margin: 100px 0px; }
+  #about_us .about_contains {
     flex-wrap: wrap;
-    justify-content: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px; }
+  #about_us .ab_one {
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    height: 100%;
+    padding: 50px 0;
+    margin-top: 20px; }
+    #about_us .ab_one .about_image {
+      height: 100%;
+      width: 100%; }
+    #about_us .ab_one img {
+      width: 100%;
+      height: 100%;
+      padding: 0px 20px !important;
+      object-fit: contain; }
+  #about_us .ab_tow {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
-    width: 100%; }
-    #about_us .ab_tow .rantal_interior .rantal {
+    gap: 20px;
+    text-align: left; }
+    #about_us .ab_tow .rantal_interior {
       display: flex;
-      align-items: center;
-      width: 50%; }
-      #about_us .ab_tow .rantal_interior .rantal p span {
-        padding: 10px;
-        line-height: 2;
-        font-size: 30px;
-        border: 2px solid rgba(111, 106, 105, 0.157);
-        color: #ff5e14; }
-      #about_us .ab_tow .rantal_interior .rantal b {
-        font-family: "Exo", sans-serif;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 140%;
-        color: #0e121d;
-        width: 150px;
-        margin-left: 20px; }
-    #about_us .ab_tow .rantal_interior .interior {
+      flex-wrap: wrap;
+      justify-content: center;
       display: flex;
-      align-items: center;
-      width: 50%; }
-      #about_us .ab_tow .rantal_interior .interior p {
-        height: 100%; }
-        #about_us .ab_tow .rantal_interior .interior p span {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%; }
+      #about_us .ab_tow .rantal_interior .rantal {
+        display: flex;
+        align-items: center;
+        width: 50%; }
+        #about_us .ab_tow .rantal_interior .rantal p span {
           padding: 10px;
           line-height: 2;
           font-size: 30px;
           border: 2px solid rgba(111, 106, 105, 0.157);
           color: #ff5e14; }
-      #about_us .ab_tow .rantal_interior .interior b {
-        font-family: "Exo", sans-serif;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 140%;
-        color: #0e121d;
-        width: 150px;
-        margin-left: 20px; }
-  #about_us .ab_tow .tick_phn {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; }
-    #about_us .ab_tow .tick_phn .tick {
-      width: 65%; }
-      #about_us .ab_tow .tick_phn .tick p:nth-child(2) {
-        margin-top: -10px; }
-      #about_us .ab_tow .tick_phn .tick .check_round {
-        border: 1px solid #ff5e14;
-        width: 20px;
-        height: 20px;
-        line-height: 20px;
-        text-align: center;
-        color: #ff5e14;
-        border-radius: 50%;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-        display: inline-block;
-        margin-top: 20px; }
-    #about_us .ab_tow .tick_phn .phn {
-      width: 35%;
+        #about_us .ab_tow .rantal_interior .rantal b {
+          font-family: "Exo", sans-serif;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 140%;
+          color: #0e121d;
+          width: 150px;
+          margin-left: 20px; }
+      #about_us .ab_tow .rantal_interior .interior {
+        display: flex;
+        align-items: center;
+        width: 50%; }
+        #about_us .ab_tow .rantal_interior .interior p {
+          height: 100%; }
+          #about_us .ab_tow .rantal_interior .interior p span {
+            padding: 10px;
+            line-height: 2;
+            font-size: 30px;
+            border: 2px solid rgba(111, 106, 105, 0.157);
+            color: #ff5e14; }
+        #about_us .ab_tow .rantal_interior .interior b {
+          font-family: "Exo", sans-serif;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 140%;
+          color: #0e121d;
+          width: 150px;
+          margin-left: 20px; }
+    #about_us .ab_tow .tick_phn {
+      width: 100%;
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+      flex-wrap: wrap;
+      justify-content: space-between;
       align-items: center; }
-      #about_us .ab_tow .tick_phn .phn .phn_icon {
-        color: #ff5e14;
-        padding: 10px;
-        font-size: 30px;
-        z-index: 5; }
-      #about_us .ab_tow .tick_phn .phn .phn_number p:nth-child(1) {
-        font-family: "Exo", sans-serif;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 143%;
-        color: #4d5765; }
-      #about_us .ab_tow .tick_phn .phn .phn_number p:nth-child(2) {
-        font-family: "Exo", sans-serif;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 143%;
-        color: #4d5765; }
-  #about_us .ab_tow .read_more_btn {
-    width: 100%;
-    margin: 40px 0; }
-    #about_us .ab_tow .read_more_btn span a {
-      font-family: "Public Sans", sans-serif;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 87%;
-      text-transform: uppercase;
-      color: #fff;
-      text-align: left;
-      background-color: #ff5e14;
-      padding: 15px 20px;
-      border-radius: 5px;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      -ms-border-radius: 5px;
-      -o-border-radius: 5px; }
+      #about_us .ab_tow .tick_phn .tick {
+        width: 65%; }
+        #about_us .ab_tow .tick_phn .tick p:nth-child(2) {
+          margin-top: -10px; }
+        #about_us .ab_tow .tick_phn .tick .check_round {
+          border: 1px solid #ff5e14;
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          text-align: center;
+          color: #ff5e14;
+          border-radius: 50%;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          display: inline-block;
+          margin-top: 20px; }
+      #about_us .ab_tow .tick_phn .phn {
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; }
+        #about_us .ab_tow .tick_phn .phn .phn_icon {
+          color: #ff5e14;
+          padding: 10px;
+          font-size: 30px;
+          z-index: 5; }
+        #about_us .ab_tow .tick_phn .phn .phn_number p:nth-child(1) {
+          font-family: "Exo", sans-serif;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 143%;
+          color: #4d5765; }
+        #about_us .ab_tow .tick_phn .phn .phn_number p:nth-child(2) {
+          font-family: "Exo", sans-serif;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 143%;
+          color: #4d5765; }
+    #about_us .ab_tow .read_more_btn {
+      width: 100%;
+      margin: 40px 0; }
+      #about_us .ab_tow .read_more_btn span a {
+        font-family: "Public Sans", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 87%;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: left;
+        background-color: #ff5e14;
+        padding: 15px 20px;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px; }
 
 /* ====================ABOUT US END====================== */
 /* ====================SERVICE SECTION START====================== */
