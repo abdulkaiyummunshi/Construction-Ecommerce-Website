@@ -114,6 +114,7 @@
 /*common css end*/
 // ==================== Navigation Bar Start ====================
 #navigation {
+  // overflow: hidden;
   background: $white;
   height: 115px;
   @include flex(row, space-between, center);
@@ -515,6 +516,7 @@
 
 /* ==================== Banner Section ==================== */
 #banner {
+  overflow: hidden;
   position: relative;
   width: 100%;
   @include background_img(no-repeat, center);
@@ -534,10 +536,12 @@
   }
 
   .banner_contains {
-    overflow: hidden;
+
+    // overflow: hidden;
     @include flex(column, center, center);
     width: 100%;
-    height: 317px;
+    padding-bottom: 10px
+    // height: 317px;
   }
   
   .contains {

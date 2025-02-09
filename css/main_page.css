@@ -403,6 +403,7 @@
 /* ====================NAVIGATION BAR END====================== */
 /* ==================== Banner Section ==================== */
 #banner {
+  overflow: hidden;
   position: relative;
   width: 100%;
   background-repeat: no-repeat;
@@ -419,13 +420,12 @@
     left: 0;
     bottom: 0; }
   #banner .banner_contains {
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 317px; }
+    padding-bottom: 10px; }
   #banner .contains {
     display: flex;
     flex-direction: row;
