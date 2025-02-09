@@ -2,11 +2,20 @@
 .color_white {
   color: white !important; }
 
+.text-right {
+  text-align: right !important; }
+
 .d-flex {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center; }
+
+.sub_heading {
+  width: 100%; }
+
+.cmn_btn {
+  width: 100%; }
 
 .common_btn {
   cursor: pointer !important;
@@ -98,15 +107,6 @@
 
 .heading_part_h2 {
   color: #fff !important; }
-
-.heading_part_center {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-  text-align: center; }
 
 /*common css end*/
 #navigation {

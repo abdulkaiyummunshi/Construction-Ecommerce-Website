@@ -4,11 +4,21 @@
 .color_white{
   color: white !important;
 }
+.text-right{
+  text-align: right !important;
+}
 .d-flex{
   @include flex(row, center, center)
 }
+.sub_heading{
+  width: 100%;
+}
+.cmn_btn{
+  width: 100%;
+}
 .common_btn{
   cursor: pointer !important;
+  // background-color: red !important;
   border: none;
   background-color: #ff5e14;
   @include border-radius(5px);
@@ -107,13 +117,13 @@
   .heading_part_h2{
     color: $white !important;
   }
-  .heading_part_center{
-  width: 100%;
-  @include flex(column, center, center);
-  margin-top: 40px;
-  text-align: center;
+//   .heading_part_center{
+//   width: 100%;
+//   @include flex(column, center, center);
+//   margin-top: 40px;
+//   text-align: center;
 
-}
+// }
 /*common css end*/
 // ==================== Navigation Bar Start ====================
 #navigation {
