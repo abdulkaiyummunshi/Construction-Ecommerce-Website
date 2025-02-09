@@ -829,9 +829,10 @@
 
 #service .srv_three {
   display: flex;
-  flex-direction: wrap;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px; }
 
 #service .srv_three .tk-1 {

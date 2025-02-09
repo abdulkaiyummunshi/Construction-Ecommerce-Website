@@ -983,7 +983,8 @@ button{
 }
 
 #service .srv_three {
-  @include flex(wrap, space-between, center);
+  @include flex(row, space-between, center);
+  flex-wrap: wrap;
   gap: 10px;
 }
 
